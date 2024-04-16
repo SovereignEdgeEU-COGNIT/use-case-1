@@ -1,0 +1,16 @@
+Warning: No connection between edge '836066067' and edge '836066067' found.
+Warning: Vehicle '20_bus_0335:1' has no valid route from edge '836066067' to stop edge '836066067'.
+Warning: No connection between edge '836066067' and edge '836066067' found.
+Warning: Vehicle '22_bus_0336:1' has no valid route from edge '836066067' to stop edge '836066067'.
+Warning: No connection between edge '836066067' and edge '836066067' found.
+Warning: Vehicle '16_bus_0241:1' has no valid route from edge '836066067' to stop edge '836066067'.
+Warning: No connection between edge '836066067' and edge '836066067' found.
+Warning: Vehicle '18_bus_0325:1' has no valid route from edge '836066067' to stop edge '836066067'.
+Warning: Teleporting vehicle '16_bus_0241:1'; waited too long (wrong lane), lane='836066067_0', time=768.00.
+Warning: Vehicle '16_bus_0241:1' ends teleporting on edge '836066067', time=768.00.
+Warning: Teleporting vehicle '18_bus_0325:1'; waited too long (wrong lane), lane='836066067_0', time=1075.00.
+Warning: Vehicle '18_bus_0325:1' ends teleporting on edge '836066067', time=1075.00.
+Warning: Teleporting vehicle '20_bus_0335:1'; waited too long (wrong lane), lane='836066067_0', time=1383.00.
+Warning: Vehicle '20_bus_0335:1' ends teleporting on edge '836066067', time=1383.00.
+Warning: Teleporting vehicle '22_bus_0336:1'; waited too long (wrong lane), lane='836066067_0', time=1690.00.
+Warning: Vehicle '22_bus_0336:1' ends teleporting on edge '836066067', time=1690.00.

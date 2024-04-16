@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2024-03-15 19:07:03.766935 by $Id: ptlines2flows.py v1_3_1+0313-ccb31df3eb jakob.erdmann@dlr.de 2019-09-02 13:26:32 +0200 $ v1_14_1+0000-f654d7b963e
+  options: 
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="pt_bus" vClass="bus"/>
+    <vType id="pt_tram" vClass="tram"/>
+    <vType id="pt_train" vClass="rail"/>
+    <vType id="pt_subway" vClass="rail_urban"/>
+    <vType id="pt_light_rail" vClass="rail_urban"/>
+    <vType id="pt_monorail" vClass="rail"/>
+    <vType id="pt_trolleybus" vClass="bus"/>
+    <vType id="pt_minibus" vClass="bus"/>
+    <vType id="pt_share_taxi" vClass="taxi"/>
+    <vType id="pt_aerialway" vClass="bus"/>
+    <vType id="pt_ferry" vClass="ship"/>
+    <route id="pt_bus_N5:0" color="0,165,173" edges="683569549#0" >
+        <stop busStop="6402593691" duration="20" until="31.0"/> <!-- Avenida de la Constitución 2 - Triunfo -->
+    </route>
+    <route id="pt_bus_0140:0" edges="836066067" >
+        <stop busStop="304494167" duration="20" until="31.0"/> <!-- Rector Marín Ocete -->
+    </route>
+    <route id="pt_bus_N9:0" color="239,181,0" edges="683569549#0" >
+        <stop busStop="6402593691" duration="20" until="31.0"/> <!-- Avenida de la Constitución 2 - Triunfo -->
+    </route>
+    <route id="pt_bus_0225:0" edges="836066067" >
+        <stop busStop="304494167" duration="20" until="31.0"/> <!-- Rector Marín Ocete -->
+    </route>
+    <route id="pt_bus_N5:1" color="0,165,173" edges="683569549#0 636267387 836066071#0 158065206#0 158065206#2 158065206#3 158065206#5 628243089#0 628243089#1" >
+        <stop busStop="6402593691" duration="20" until="31.0"/> <!-- Avenida de la Constitución 2 - Triunfo -->
+    </route>
+    <route id="pt_bus_N9:1" color="239,181,0" edges="683569549#0 636267387 836066071#0 98905665#2 107397706#0 107397706#1" >
+        <stop busStop="6402593691" duration="20" until="31.0"/> <!-- Avenida de la Constitución 2 - Triunfo -->
+    </route>
+    <route id="pt_bus_0226:0" edges="836066067" >
+        <stop busStop="304494167" duration="20" until="31.0"/> <!-- Rector Marín Ocete -->
+    </route>
+    <route id="pt_bus_111:0" color="74,74,74" edges="683569549#0 636267387 836066071#0 98905665#2 98905675" >
+        <stop busStop="6402593691" duration="20" until="31.0"/> <!-- Avenida de la Constitución 2 - Triunfo -->
+    </route>
+    <route id="pt_bus_0240:0" edges="836066067" >
+        <stop busStop="304494167" duration="20" until="31.0"/> <!-- Rector Marín Ocete -->
+    </route>
+    <route id="pt_bus_0140:1" edges="836066067 158065211#0 158065211#1 158065211#3 836066069 158065206#0 158065206#2 158065206#3 158065206#5 628243089#0 628243089#1" >
+        <stop busStop="304494167" duration="20" until="31.0"/> <!-- Rector Marín Ocete -->
+    </route>
+    <route id="pt_bus_0225:1" edges="836066067 158065211#0 158065211#1 158065211#3 836066069 158065206#0 158065206#2 158065206#3 158065206#5 628243089#0 628243089#1" >
+        <stop busStop="304494167" duration="20" until="31.0"/> <!-- Rector Marín Ocete -->
+    </route>
+    <route id="pt_bus_0242:0" edges="836066067" >
+        <stop busStop="304494167" duration="20" until="31.0"/> <!-- Rector Marín Ocete -->
+    </route>
+    <route id="pt_bus_0241:0" edges="836066067" >
+        <stop busStop="304494167" duration="20" until="31.0"/> <!-- Rector Marín Ocete -->
+    </route>
+    <route id="pt_bus_0226:1" edges="836066067 158065211#0 158065211#1 158065211#3 836066069 158065206#0 158065206#2 158065206#3 158065206#5 628243089#0 628243089#1" >
+        <stop busStop="304494167" duration="20" until="31.0"/> <!-- Rector Marín Ocete -->
+    </route>
+    <route id="pt_bus_N3:0" color="189,106,15" edges="683569549#0" >
+        <stop busStop="6402593691" duration="20" until="31.0"/> <!-- Avenida de la Constitución 2 - Triunfo -->
+    </route>
+    <route id="pt_bus_0240:1" edges="836066067 158065211#0 158065211#1 158065211#3 836066069 158065206#0 158065206#2 158065206#3 158065206#5 628243089#0 628243089#1" >
+        <stop busStop="304494167" duration="20" until="31.0"/> <!-- Rector Marín Ocete -->
+    </route>
+    <route id="pt_bus_N1:0" color="90,57,40" edges="683569549#0 636267387 836066071#0 158065206#0 158065206#2 158065206#3 158065206#5 628243089#0 628243089#1" >
+        <stop busStop="6402593691" duration="20" until="31.0"/> <!-- Avenida de la Constitución 2 - Triunfo -->
+    </route>
+    <route id="pt_bus_0325:0" edges="836066067" >
+        <stop busStop="304494167" duration="20" until="31.0"/> <!-- Rector Marín Ocete -->
+    </route>
+    <route id="pt_bus_0242:1" edges="836066067 158065211#0 158065211#1 158065211#3 836066069 158065206#0 158065206#2 158065206#3 158065206#5 628243089#0 628243089#1" >
+        <stop busStop="304494167" duration="20" until="31.0"/> <!-- Rector Marín Ocete -->
+    </route>
+    <route id="pt_bus_N1:1" color="90,57,40" edges="683569549#0" >
+        <stop busStop="6402593691" duration="20" until="31.0"/> <!-- Avenida de la Constitución 2 - Triunfo -->
+    </route>
+    <route id="pt_bus_33:0" color="230,0,123" edges="683569549#0 636267387 836066071#0 98905665#2 98905675" >
+        <stop busStop="6402593691" duration="20" until="31.0"/> <!-- Avenida de la Constitución 2 - Triunfo -->
+    </route>
+    <route id="pt_bus_N8:0" color="155,100,82" edges="683569549#0 636267387 836066071#0 98905665#2 98905675" >
+        <stop busStop="6402593691" duration="20" until="31.0"/> <!-- Avenida de la Constitución 2 - Triunfo -->
+    </route>
+    <route id="pt_bus_0122B:0" edges="158061271#0 158061271#5 10501843#2 10501843#5 836066067" >
+        <stop busStop="5931035185" duration="20" until="252.0"/> <!-- Rector Marín Ocete -->
+    </route>
+    <route id="pt_bus_0340:0" edges="158061271#0 158061271#5 10501843#2 10501843#5 836066067 158065211#0 158065211#1 158065211#3 836066069 158065206#0 158065206#2 158065206#3 158065206#5 628243089#0 628243089#1" >
+        <stop busStop="304494167" duration="20" until="131.0"/> <!-- Rector Marín Ocete -->
+    </route>
+    <route id="pt_bus_0124:1" edges="158061271#0 158061271#5 10501843#2 10501843#5 836066067" >
+        <stop busStop="5931035185" duration="20" until="237.0"/> <!-- Rector Marín Ocete -->
+    </route>
+    <route id="pt_bus_0126:0" edges="158061271#0 158061271#5 10501843#2 10501843#5 836066067" >
+        <stop busStop="5931035185" duration="20" until="268.0"/> <!-- Rector Marín Ocete -->
+    </route>
+    <route id="pt_bus_0340:1" edges="158061271#0 158061271#5 10501843#2 10501843#5 836066067 158065211#0 158065211#1 158065211#3 836066069 158065206#0 158065206#2 158065206#3 158065206#5 628243089#0 628243089#1" >
+        <stop busStop="304494167" duration="20" until="191.0"/> <!-- Rector Marín Ocete -->
+    </route>
+    <route id="pt_bus_11:0" color="156,148,198" edges="683569549#0 636267387 836066071#0 158065206#0 158065206#2 158065206#3 158065206#5 628243089#0 628243089#1" >
+        <stop busStop="6402593691" duration="20" until="31.0"/> <!-- Avenida de la Constitución 2 - Triunfo -->
+    </route>
+    <route id="pt_bus_N3:1" color="189,106,15" edges="683569549#0 636267387 836066071#0 158065206#0 158065206#2 158065206#3 158065206#5 628243089#0 628243089#1" >
+        <stop busStop="6402593691" duration="20" until="31.0"/> <!-- Avenida de la Constitución 2 - Triunfo -->
+    </route>
+    <route id="pt_bus_0335:0" edges="836066067" >
+        <stop busStop="304494167" duration="20" until="31.0"/> <!-- Rector Marín Ocete -->
+    </route>
+    <route id="pt_bus_0122A:1" edges="158061271#0 158061271#5 10501843#2 10501843#5 836066067" >
+        <stop busStop="5931035185" duration="20" until="214.0"/> <!-- Rector Marín Ocete -->
+    </route>
+    <route id="pt_bus_21:0" edges="683569549#0 636267387 836066071#0 158065206#0 158065206#2 158065206#3 158065206#5 628243089#0 628243089#1" >
+        <stop busStop="6402593691" duration="20" until="31.0"/> <!-- Avenida de la Constitución 2 - Triunfo -->
+    </route>
+    <route id="pt_bus_0336:0" edges="836066067" >
+        <stop busStop="304494167" duration="20" until="31.0"/> <!-- Rector Marín Ocete -->
+    </route>
+    <route id="pt_bus_0241:1" edges="836066067 836066067 158065211#0 158065211#1 158065211#3 836066069 158065206#0 158065206#2 158065206#3 158065206#5 628243089#0 628243089#1" >
+        <stop busStop="304494167" duration="20" until="31.0"/> <!-- Rector Marín Ocete -->
+    </route>
+    <route id="pt_bus_0325:1" edges="836066067 836066067 158065211#0 158065211#1 158065211#3 836066069 158065206#0 158065206#2 158065206#3 158065206#5 628243089#0 628243089#1" >
+        <stop busStop="304494167" duration="20" until="31.0"/> <!-- Rector Marín Ocete -->
+    </route>
+    <route id="pt_bus_0122B:1" edges="836066067 158065211#0 158065211#1 158065211#3 836066069 158065206#0 158065206#2 158065206#3 158065206#5 628243089#0 628243089#1" >
+        <stop busStop="5931035185" duration="20" until="259.0"/> <!-- Rector Marín Ocete -->
+    </route>
+    <route id="pt_bus_0124:0" edges="836066067 158065211#0 158065211#1 158065211#3 836066069 158065206#0 158065206#2 158065206#3 158065206#5 628243089#0 628243089#1" >
+        <stop busStop="5931035185" duration="20" until="69.0"/> <!-- Rector Marín Ocete -->
+    </route>
+    <route id="pt_bus_0126:1" edges="836066067 158065211#0 158065211#1 158065211#3 836066069 158065206#0 158065206#2 158065206#3 158065206#5 628243089#0 628243089#1" >
+        <stop busStop="5931035185" duration="20" until="69.0"/> <!-- Rector Marín Ocete -->
+    </route>
+    <route id="pt_bus_0122A:0" edges="836066067 158065211#0 158065211#1 158065211#3 836066069 158065206#0 158065206#2 158065206#3 158065206#5 628243089#0 628243089#1" >
+        <stop busStop="5931035185" duration="20" until="70.0"/> <!-- Rector Marín Ocete -->
+    </route>
+    <route id="pt_bus_0335:1" edges="836066067 836066067 158065211#0 158065211#1 158065211#3 836066069 158065206#0 158065206#2 158065206#3 158065206#5 628243089#0 628243089#1" >
+        <stop busStop="304494167" duration="20" until="31.0"/> <!-- Rector Marín Ocete -->
+    </route>
+    <route id="pt_bus_0336:1" edges="836066067 836066067 158065211#0 158065211#1 158065211#3 836066069 158065206#0 158065206#2 158065206#3 158065206#5 628243089#0 628243089#1" >
+        <stop busStop="304494167" duration="20" until="31.0"/> <!-- Rector Marín Ocete -->
+    </route>
+    <flow id="pt_bus_N5:0" type="pt_bus" route="pt_bus_N5:0" begin="3.0" end="3603.0" period="600" line="N5:0" >
+        <param key="name" value="Bus N5: Modesto Cendoya → Joaquina Eguaras → Triunfo"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_bus_0140:0" type="pt_bus" route="pt_bus_0140:0" begin="55.0" end="3655.0" period="600" line="0140:0" >
+        <param key="name" value="Bus 0140: Santa Fe → Granada"/>
+        <param key="completeness" value="0.06"/>
+    </flow>
+    <flow id="pt_bus_N9:0" type="pt_bus" route="pt_bus_N9:0" begin="72.0" end="3672.0" period="600" line="N9:0" >
+        <param key="name" value="Bus N9: San Miguel → Triunfo"/>
+        <param key="completeness" value="0.05"/>
+    </flow>
+    <flow id="pt_bus_0225:0" type="pt_bus" route="pt_bus_0225:0" begin="122.0" end="3722.0" period="600" line="0225:0" >
+        <param key="name" value="Bus 0225: Pinos Puente → Granada"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_bus_N5:1" type="pt_bus" route="pt_bus_N5:1" begin="38.0" end="3638.0" period="600" line="N5:1" >
+        <param key="name" value="Bus N5: Triunfo → Joaquina Eguaras → Modesto Cendoya"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_bus_N9:1" type="pt_bus" route="pt_bus_N9:1" begin="108.0" end="3708.0" period="600" line="N9:1" >
+        <param key="name" value="Bus N9: Triunfo → San Miguel"/>
+        <param key="completeness" value="0.06"/>
+    </flow>
+    <flow id="pt_bus_0226:0" type="pt_bus" route="pt_bus_0226:0" begin="189.0" end="3789.0" period="600" line="0226:0" >
+        <param key="name" value="Bus 0226: Zujaira → Pinos Puente → Granada"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_bus_111:0" type="pt_bus" route="pt_bus_111:0" begin="144.0" end="3744.0" period="600" line="111:0" >
+        <param key="name" value="Bus 111: Búho Camino de Ronda → Ayuntamiento → Gran Vía"/>
+        <param key="completeness" value="0.01"/>
+    </flow>
+    <flow id="pt_bus_0240:0" type="pt_bus" route="pt_bus_0240:0" begin="256.0" end="3856.0" period="600" line="0240:0" >
+        <param key="name" value="Bus 0240: Fuente Vaqueros → Chauchina → Santa Fe → Granada"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_bus_0140:1" type="pt_bus" route="pt_bus_0140:1" begin="91.0" end="3691.0" period="600" line="0140:1" >
+        <param key="name" value="Bus 0140: Granada → Santa Fe"/>
+        <param key="completeness" value="0.06"/>
+    </flow>
+    <flow id="pt_bus_0225:1" type="pt_bus" route="pt_bus_0225:1" begin="158.0" end="3758.0" period="600" line="0225:1" >
+        <param key="name" value="Bus 0225: Granada → Pinos Puente"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_bus_0242:0" type="pt_bus" route="pt_bus_0242:0" begin="323.0" end="3923.0" period="600" line="0242:0" >
+        <param key="name" value="Bus 0242: Láchar → Cijuela → Chauchina → Santa Fe → Granada"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_bus_0241:0" type="pt_bus" route="pt_bus_0241:0" begin="389.0" end="3989.0" period="600" line="0241:0" >
+        <param key="name" value="Bus 0241: Cijuela → Chauchina → Santa Fe → Granada"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_bus_0226:1" type="pt_bus" route="pt_bus_0226:1" begin="225.0" end="3825.0" period="600" line="0226:1" >
+        <param key="name" value="Bus 0226: Granada → Pinos Puente → Zujaira"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_bus_N3:0" type="pt_bus" route="pt_bus_N3:0" begin="439.0" end="4039.0" period="600" line="N3:0" >
+        <param key="name" value="Bus N3: Cerrillo de Maracena → Triunfo"/>
+        <param key="completeness" value="0.06"/>
+    </flow>
+    <flow id="pt_bus_0240:1" type="pt_bus" route="pt_bus_0240:1" begin="292.0" end="3892.0" period="600" line="0240:1" >
+        <param key="name" value="Bus 0240: Granada → Santa Fe → Chauchina → Fuente Vaqueros"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_bus_N1:0" type="pt_bus" route="pt_bus_N1:0" begin="406.0" end="4006.0" period="600" line="N1:0" >
+        <param key="name" value="Bus N1: Villarejo → Bobadilla"/>
+        <param key="completeness" value="0.06"/>
+    </flow>
+    <flow id="pt_bus_0325:0" type="pt_bus" route="pt_bus_0325:0" begin="493.0" end="4093.0" period="600" line="0325:0" >
+        <param key="name" value="Bus 0325: Brácana → Tocón → Alomartes → Íllora → Obéilar → Zujaira → Pinos Puente → Granada"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_bus_0242:1" type="pt_bus" route="pt_bus_0242:1" begin="358.0" end="3958.0" period="600" line="0242:1" >
+        <param key="name" value="Bus 0242: Granada → Santa Fe → Chauchina → Cijuela → Láchar"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_bus_N1:1" type="pt_bus" route="pt_bus_N1:1" begin="556.0" end="4156.0" period="600" line="N1:1" >
+        <param key="name" value="Bus N1: Bobadilla → Villarejo"/>
+        <param key="completeness" value="0.06"/>
+    </flow>
+    <flow id="pt_bus_33:0" type="pt_bus" route="pt_bus_33:0" begin="484.0" end="4084.0" period="600" line="33:0" >
+        <param key="name" value="Bus 33: Cenes de la Vega → Estación de Autobuses"/>
+        <param key="completeness" value="0.02"/>
+    </flow>
+    <flow id="pt_bus_N8:0" type="pt_bus" route="pt_bus_N8:0" begin="520.0" end="4120.0" period="600" line="N8:0" >
+        <param key="name" value="Bus N8: Triunfo → Fargue"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_bus_0122B:0" type="pt_bus" route="pt_bus_0122B:0" begin="383.0" end="3983.0" period="600" line="0122B:0" >
+        <param key="name" value="Bus 0122B: Atarfe → Albolote → Maracena → Granada"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_bus_0340:0" type="pt_bus" route="pt_bus_0340:0" begin="362.0" end="3962.0" period="600" line="0340:0" >
+        <param key="name" value="Bus 0340: El Turro → Castillo de Tajarja → Peñuelas → Trasmulas → Láchar → Cijuela → Santa Fe → Granada"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_bus_0124:1" type="pt_bus" route="pt_bus_0124:1" begin="437.0" end="4037.0" period="600" line="0124:1" >
+        <param key="name" value="Bus 0124: Atarfe → Granada (por Avenida de la Cañada)"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_bus_0126:0" type="pt_bus" route="pt_bus_0126:0" begin="443.0" end="4043.0" period="600" line="0126:0" >
+        <param key="name" value="Bus 0126: Caparacena → Urbanización Los Cortijos → Medina Elvira → Atarfe → Granada"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_bus_0340:1" type="pt_bus" route="pt_bus_0340:1" begin="371.0" end="3971.0" period="600" line="0340:1" >
+        <param key="name" value="Bus 0340: Granada → Santa Fe → Cijuela → Láchar → Trasmulas → Peñuelas → Castillo de Tajarja → El Turro"/>
+        <param key="completeness" value="0.05"/>
+    </flow>
+    <flow id="pt_bus_11:0" type="pt_bus" route="pt_bus_11:0" begin="625.0" end="4225.0" period="600" line="11:0" >
+        <param key="name" value="Bus 11: Circular Camino de Ronda - Ayuntamiento - Gran Vía"/>
+        <param key="completeness" value="0.02"/>
+    </flow>
+    <flow id="pt_bus_N3:1" type="pt_bus" route="pt_bus_N3:1" begin="592.0" end="4192.0" period="600" line="N3:1" >
+        <param key="name" value="Bus N3: Triunfo → Cerrillo de Maracena"/>
+        <param key="completeness" value="0.07"/>
+    </flow>
+    <flow id="pt_bus_0335:0" type="pt_bus" route="pt_bus_0335:0" begin="715.0" end="4315.0" period="600" line="0335:0" >
+        <param key="name" value="Bus 0335: Obéilar → Escóznar → Valderrubio → Fuente Vaqueros → Granada"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_bus_0122A:1" type="pt_bus" route="pt_bus_0122A:1" begin="535.0" end="4135.0" period="600" line="0122A:1" >
+        <param key="name" value="Bus 0122A: Atarfe → Albolote → Maracena → Granada"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_bus_21:0" type="pt_bus" route="pt_bus_21:0" begin="658.0" end="4258.0" period="600" line="21:0" >
+        <param key="name" value="Bus 21: Estación de Autobuses → Centro → Parque de las Ciencias"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_bus_0336:0" type="pt_bus" route="pt_bus_0336:0" begin="782.0" end="4382.0" period="600" line="0336:0" >
+        <param key="name" value="Bus 0336: Obéilar → Valderrubio → Fuente Vaqueros → Chauchina → Granada"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_bus_0241:1" type="pt_bus" route="pt_bus_0241:1" begin="425.0" end="4025.0" period="600" line="0241:1" >
+        <param key="name" value="Bus 0241: Granada → Santa Fe → Chauchina → Cijuela"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_bus_0325:1" type="pt_bus" route="pt_bus_0325:1" begin="562.0" end="4162.0" period="600" line="0325:1" >
+        <param key="name" value="Bus 0325: Granada → Pinos Puente → Zujaira → Obéilar → Illora → Alomartes → Bracana → Tocón"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_bus_0122B:1" type="pt_bus" route="pt_bus_0122B:1" begin="855.0" end="4455.0" period="600" line="0122B:1" >
+        <param key="name" value="Bus 0122B: Granada → Maracena → Albolote → Atarfe"/>
+        <param key="completeness" value="0.02"/>
+    </flow>
+    <flow id="pt_bus_0124:0" type="pt_bus" route="pt_bus_0124:0" begin="1082.0" end="4682.0" period="600" line="0124:0" >
+        <param key="name" value="Bus 0124: Granada → Atarfe (por Avenida de la Cañada)"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_bus_0126:1" type="pt_bus" route="pt_bus_0126:1" begin="1119.0" end="4719.0" period="600" line="0126:1" >
+        <param key="name" value="Bus 0126: Granada → Atarfe → Medina Elvira → Urbanización Los Cortijos → Caparacena"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_bus_0122A:0" type="pt_bus" route="pt_bus_0122A:0" begin="1156.0" end="4756.0" period="600" line="0122A:0" >
+        <param key="name" value="Bus 0122A: Granada → Maracena → Albolote → Atarfe"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_bus_0335:1" type="pt_bus" route="pt_bus_0335:1" begin="746.0" end="4346.0" period="600" line="0335:1" >
+        <param key="name" value="Bus 0335: Granada → Fuente Vaqueros → Valderrubio → Escóznar → Obéilar"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_bus_0336:1" type="pt_bus" route="pt_bus_0336:1" begin="818.0" end="4418.0" period="600" line="0336:1" >
+        <param key="name" value="Bus 0336: Granada → Chauchina → Fuente Vaqueros → Valderrubio → Obéilar"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+</routes>

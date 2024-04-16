@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2024-03-15 11:57:05.271225 by $Id: ptlines2flows.py v1_3_1+0313-ccb31df3eb jakob.erdmann@dlr.de 2019-09-02 13:26:32 +0200 $ v1_14_1+0000-f654d7b963e
+  options: 
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="pt_bus" vClass="bus"/>
+    <vType id="pt_tram" vClass="tram"/>
+    <vType id="pt_train" vClass="rail"/>
+    <vType id="pt_subway" vClass="rail_urban"/>
+    <vType id="pt_light_rail" vClass="rail_urban"/>
+    <vType id="pt_monorail" vClass="rail"/>
+    <vType id="pt_trolleybus" vClass="bus"/>
+    <vType id="pt_minibus" vClass="bus"/>
+    <vType id="pt_share_taxi" vClass="taxi"/>
+    <vType id="pt_aerialway" vClass="bus"/>
+    <vType id="pt_ferry" vClass="ship"/>
+    <route id="pt_bus_C5:0" color="197,52,55" edges="852348513#0 -852348513#1" >
+        <stop busStop="6043563052" duration="20" until="52.0"/> <!-- Recogidas 5 -->
+    </route>
+    <route id="pt_bus_9:0" color="57,171,51" edges="673560719#0 161424709#0 -161424708#1 -161424714 -852348513#4 -852348513#1" >
+        <stop busStop="6045647687" duration="20" until="46.0"/> <!-- Acera del Casino 5 - Puerta Real -->
+    </route>
+    <route id="pt_bus_9:1" color="57,171,51" edges="852348513#0 852348513#4 161424714 161424708#0 130416694#0 130416694#2 673560718" >
+        <stop busStop="6043563052" duration="20" until="53.0"/> <!-- Recogidas 5 -->
+    </route>
+    <flow id="pt_bus_C5:0" type="pt_bus" route="pt_bus_C5:0" begin="15.0" end="3615.0" period="600" line="C5:0" >
+        <param key="name" value="Bus C5: Neptuno → Centro"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_bus_9:0" type="pt_bus" route="pt_bus_9:0" begin="165.0" end="3765.0" period="600" line="9:0" >
+        <param key="name" value="Bus 9: Los Rebites → Chana"/>
+        <param key="completeness" value="0.02"/>
+    </flow>
+    <flow id="pt_bus_9:1" type="pt_bus" route="pt_bus_9:1" begin="383.0" end="3983.0" period="600" line="9:1" >
+        <param key="name" value="Bus 9: Chana → Los Rebites"/>
+        <param key="completeness" value="0.01"/>
+    </flow>
+</routes>

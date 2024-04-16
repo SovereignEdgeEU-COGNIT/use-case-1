@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2024-03-15 18:43:27 by Eclipse SUMO netconvert Version 1.14.1
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <type-files value="C:\Program%20Files%20(x86)\Eclipse\Sumo\data\typemap\osmNetconvert.typ.xml,C:\Program%20Files%20(x86)\Eclipse\Sumo\data\typemap\osmNetconvertBicycle.typ.xml"/>
+        <osm-files value="osm_bbox.osm.xml.gz"/>
+    </input>
+
+    <output>
+        <output-file value="osm.net.xml"/>
+        <output.street-names value="true"/>
+        <output.original-names value="true"/>
+        <ptstop-output value="osm_stops.add.xml"/>
+        <ptline-output value="osm_ptlines.xml"/>
+    </output>
+
+    <projection>
+        <proj.utm value="true"/>
+    </projection>
+
+    <processing>
+        <geometry.remove value="true"/>
+        <roundabouts.guess value="true"/>
+    </processing>
+
+    <tls_building>
+        <tls.discard-simple value="true"/>
+        <tls.join value="true"/>
+        <tls.guess-signals value="true"/>
+        <tls.default-type value="actuated"/>
+    </tls_building>
+
+    <ramp_guessing>
+        <ramps.guess value="true"/>
+    </ramp_guessing>
+
+    <junctions>
+        <junctions.join value="true"/>
+        <junctions.corner-detail value="5"/>
+    </junctions>
+
+    <railway>
+        <railway.topology.repair value="true"/>
+    </railway>
+
+    <formats>
+        <osm.bike-access value="true"/>
+    </formats>
+
+    <report>
+        <verbose value="true"/>
+    </report>
+
+</configuration>
+-->
+
+<ptLines xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/ptlines_file.xsd">
+    <ptLine id="10440612" name="Bus C32: Alhambra → Albaicín" line="C32" type="bus" vClass="bus" color="195,158,17" completeness="0.02">
+        <route edges="-672151375 43332286#2 667310225 158054192 158054226 316344464 98905677 -478163087"/>
+        <busStop id="-6294278478" name="Avenida del Hospicio - Triunfo"/>
+    </ptLine>
+    <ptLine id="7353916" name="Bus C31: Albaicín → Centro" line="C31" type="bus" vClass="bus" color="216,82,8" completeness="0.04">
+        <route edges="-672151375 43332286#2 667310225 158054192 158054226 316344464 98905677 -478163087"/>
+        <busStop id="-6294278478" name="Avenida del Hospicio - Triunfo"/>
+    </ptLine>
+    <ptLine id="7524914" name="Bus C34: Sacromonte → Centro" line="C34" type="bus" vClass="bus" color="91,156,117" completeness="0.02">
+        <route edges="-672151375 43332286#2 667310225 158054192 158054226 316344464 98905677 -478163087"/>
+        <busStop id="-6294278478" name="Avenida del Hospicio - Triunfo"/>
+    </ptLine>
+    <ptLine id="7938400" name="Bus N8: Fargue → Triunfo" line="N8" type="bus" vClass="bus" color="155,100,82" completeness="0.04">
+        <busStop id="-6294278478" name="Avenida del Hospicio - Triunfo"/>
+    </ptLine>
+    <ptLine id="9346767" name="Bus N8: Triunfo → Fargue" line="N8" type="bus" vClass="bus" color="155,100,82" completeness="0.04">
+        <route edges="-672151375 43332286#2 667310225 45562886#0 45562886#2"/>
+        <busStop id="-6294278478" name="Avenida del Hospicio - Triunfo"/>
+    </ptLine>
+    <ptLine id="9479669" name="Bus 8: Camino de Alfacar → Palacio de Deportes" line="8" type="bus" vClass="bus" color="100,120,110" completeness="0.03">
+        <route edges="-672151375 43332286#2 667310225 158054192 158054226 316344464 98905677 -478163087"/>
+        <busStop id="-6294278478" name="Avenida del Hospicio - Triunfo"/>
+    </ptLine>
+</ptLines>

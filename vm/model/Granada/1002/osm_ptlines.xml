@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2024-03-15 12:37:10 by Eclipse SUMO netconvert Version 1.14.1
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <type-files value="C:\Program%20Files%20(x86)\Eclipse\Sumo\data\typemap\osmNetconvert.typ.xml"/>
+        <osm-files value="osm_bbox.osm.xml.gz"/>
+    </input>
+
+    <output>
+        <output-file value="osm.net.xml"/>
+        <output.street-names value="true"/>
+        <output.original-names value="true"/>
+        <ptstop-output value="osm_stops.add.xml"/>
+        <ptline-output value="osm_ptlines.xml"/>
+    </output>
+
+    <projection>
+        <proj.utm value="true"/>
+    </projection>
+
+    <processing>
+        <geometry.remove value="true"/>
+        <roundabouts.guess value="true"/>
+    </processing>
+
+    <tls_building>
+        <tls.discard-simple value="true"/>
+        <tls.join value="true"/>
+        <tls.guess-signals value="true"/>
+        <tls.default-type value="actuated"/>
+    </tls_building>
+
+    <ramp_guessing>
+        <ramps.guess value="true"/>
+    </ramp_guessing>
+
+    <junctions>
+        <junctions.join value="true"/>
+        <junctions.corner-detail value="5"/>
+    </junctions>
+
+    <railway>
+        <railway.topology.repair value="true"/>
+    </railway>
+
+    <report>
+        <verbose value="true"/>
+    </report>
+
+</configuration>
+-->
+
+<ptLines xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/ptlines_file.xsd">
+    <ptLine id="10440612" name="Bus C32: Alhambra → Albaicín" line="C32" type="bus" vClass="bus" color="195,158,17" completeness="0.02">
+        <route edges="6066195 516904978#1 673226856 883105512#1 589472310#0 472086220#0 472086220#4 -478163097#3 -478163097#1 -589472310#1 6066195"/>
+        <busStop id="7070301837" name="Plaza de Isabel la Católica 4"/>
+    </ptLine>
+    <ptLine id="7381061" name="Bus C30: Centro → Alhambra" line="C30" type="bus" vClass="bus" color="233,81,108" completeness="0.08">
+        <route edges="6066195 516904978#1"/>
+        <busStop id="7070301837" name="Plaza de Isabel la Católica 4"/>
+    </ptLine>
+    <ptLine id="7635131" name="Bus C35: Cementerio → Barranco del Abogado → Centro" line="C35" type="bus" vClass="bus" color="0,141,212" completeness="0.03">
+        <route edges="6066195 516904978#1 530892650#0 530892650#1 156830703#1 152645952#0 6066195"/>
+        <busStop id="7070301837" name="Plaza de Isabel la Católica 4"/>
+    </ptLine>
+    <ptLine id="9361838" name="Bus C30: Alhambra → Centro" line="C30" type="bus" vClass="bus" color="233,81,108" completeness="0.06">
+        <route edges="530892650#0 530892650#1 156830703#1 152645952#0 6066195"/>
+        <busStop id="7070301837" name="Plaza de Isabel la Católica 4"/>
+    </ptLine>
+</ptLines>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2024-03-15 11:57:04 by Eclipse SUMO netconvert Version 1.14.1
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <type-files value="C:\Program%20Files%20(x86)\Eclipse\Sumo\data\typemap\osmNetconvert.typ.xml"/>
+        <osm-files value="osm_bbox.osm.xml.gz"/>
+    </input>
+
+    <output>
+        <output-file value="osm.net.xml"/>
+        <output.street-names value="true"/>
+        <output.original-names value="true"/>
+        <ptstop-output value="osm_stops.add.xml"/>
+        <ptline-output value="osm_ptlines.xml"/>
+    </output>
+
+    <projection>
+        <proj.utm value="true"/>
+    </projection>
+
+    <processing>
+        <geometry.remove value="true"/>
+        <roundabouts.guess value="true"/>
+    </processing>
+
+    <tls_building>
+        <tls.discard-simple value="true"/>
+        <tls.join value="true"/>
+        <tls.guess-signals value="true"/>
+        <tls.default-type value="actuated"/>
+    </tls_building>
+
+    <ramp_guessing>
+        <ramps.guess value="true"/>
+    </ramp_guessing>
+
+    <junctions>
+        <junctions.join value="true"/>
+        <junctions.corner-detail value="5"/>
+    </junctions>
+
+    <railway>
+        <railway.topology.repair value="true"/>
+    </railway>
+
+    <report>
+        <verbose value="true"/>
+    </report>
+
+</configuration>
+-->
+
+<ptLines xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/ptlines_file.xsd">
+    <ptLine id="7488529" name="Bus C5: Neptuno → Centro" line="C5" type="bus" vClass="bus" color="197,52,55" completeness="0.04">
+        <route edges="852348513#0 852348513#4 161424714 161424708#0 130416692#0 130416692#2 161424710#0 161424710#1 -161424711#11 -6065718#2 -6065718#1 -161424708#1 -161424714 -852348513#4 -852348513#1"/>
+        <busStop id="6043563052" name="Recogidas 5"/>
+    </ptLine>
+    <ptLine id="7787625" name="Bus 9: Los Rebites → Chana" line="9" type="bus" vClass="bus" color="57,171,51" completeness="0.02">
+        <route edges="673560719#0 161424709#0 -161424708#1 -161424714 -852348513#4 -852348513#1"/>
+        <busStop id="6045647687" name="Acera del Casino 5 - Puerta Real"/>
+    </ptLine>
+    <ptLine id="8896997" name="Bus 9: Chana → Los Rebites" line="9" type="bus" vClass="bus" color="57,171,51" completeness="0.01">
+        <route edges="852348513#0 852348513#4 161424714 161424708#0 130416694#0 130416694#2 673560718"/>
+        <busStop id="6043563052" name="Recogidas 5"/>
+    </ptLine>
+</ptLines>

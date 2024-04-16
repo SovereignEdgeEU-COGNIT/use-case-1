@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2024-03-15 11:57:05 by Eclipse SUMO sumo Version 1.14.1
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="C:\Users\behnam.ojaghi\Sumo\2024-03-15-11-57-02\osm.net.xml"/>
+        <route-files value="C:\Users\behnam.ojaghi\Sumo\2024-03-15-11-57-02\trips.trips.xml"/>
+        <additional-files value="C:\Users\behnam.ojaghi\Sumo\2024-03-15-11-57-02\osm_stops.add.xml"/>
+    </input>
+
+    <output>
+        <vehroute-output value="C:\Users\behnam.ojaghi\Sumo\2024-03-15-11-57-02\vehroutes.xml"/>
+        <stop-output value="C:\Users\behnam.ojaghi\Sumo\2024-03-15-11-57-02\stopinfos.xml"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+    </time>
+
+    <processing>
+        <ignore-route-errors value="true"/>
+    </processing>
+
+    <routing>
+        <device.rerouting.adaptation-interval value="0"/>
+    </routing>
+
+    <report>
+        <aggregate-warnings value="5"/>
+        <error-log value="C:\Users\behnam.ojaghi\Sumo\2024-03-15-11-57-02\trips.trips.xml.errorlog"/>
+        <no-step-log value="true"/>
+    </report>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vehicle id="0_bus_C5:0" type="pt_bus" depart="15.00" departLane="0" arrival="89.00">
+        <route edges="852348513#0 -852348513#1"/>
+        <stop busStop="6043563052" duration="30.00"/>
+    </vehicle>
+
+    <vehicle id="1_bus_9:0" type="pt_bus" depart="165.00" departLane="0" arrival="263.00">
+        <route edges="673560719#0 161424709#0 -161424708#1 -161424714 -852348513#4 -852348513#1"/>
+        <stop busStop="6045647687" duration="30.00"/>
+    </vehicle>
+
+    <vehicle id="2_bus_9:1" type="pt_bus" depart="383.00" departLane="0" arrival="464.00">
+        <route edges="852348513#0 852348513#4 161424714 161424708#0 130416694#0 130416694#2 673560718"/>
+        <stop busStop="6043563052" duration="30.00"/>
+    </vehicle>
+
+</routes>
