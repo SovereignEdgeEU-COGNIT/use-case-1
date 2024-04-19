@@ -72,9 +72,9 @@ def remote_call():
 
     # call_sync sendsto execute sync.ly to the already assigned Serverless Runtime.
     # First argument is the function, followed by the parameters to execute it.
-    folder = random.randint(1001, 1004)
+    junction = random.randint(1001, 1004)
     for i in range(100):
-        result = my_cognit_runtime.call_sync(cli, f"Granada {folder} -n CO2 CO NOx")
+        result = my_cognit_runtime.call_sync(cli, f"Granada {junction} -n CO2 CO NOx")
         cognit_logger.info(f">>>>>>>> result {result}")
         # print(result)
         if result.ret_code == ExecReturnCode.ERROR:
