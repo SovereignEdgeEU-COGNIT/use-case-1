@@ -16,7 +16,8 @@ Create the following directory structure in the VM to be used to generate the FA
 * /opt/smartcity_faas/model/Terrassa/output
 * /opt/smartcity_faas/model/Granada/1001..1004
 * /opt/smartcity_faas/model/Granada/1001..1004/output
-Terrassa and Granada are some sample cities included in the model. In addition under Granada we create some junction models 1001 to 1004. Each model is independent from the others. For the final scope of the project, there will be a bigger set of junctions in the model.
+  
+Terrassa and Granada are some sample cities included in the model. In addition under Granada we create some junction models 1001 to 1004. Each model is independent from the others. For the final scope of the project, there will be a bigger set of junctions in the model.  
 When the directory structure is ready, then copy the use-case-1/vm/model content to the /opt/smartcity_faas/model in the image.
 
 ## Installing the Sumo tool in the image
