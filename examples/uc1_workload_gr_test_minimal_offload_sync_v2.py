@@ -5,7 +5,6 @@ from cognit.modules._logger import CognitLogger
 import random
 import sys
 import time
-from locust import HttpUser, task, between, events
 
 
 sys.path.append(".")
@@ -53,6 +52,7 @@ if __name__ == "__main__":
     faas_request()
 
 
+from locust import HttpUser, task, between, events
 class UC1_Test(HttpUser):
     wait_time = between(1, 5)
 
