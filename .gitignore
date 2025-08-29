@@ -1,2 +1,5 @@
 examples/old
 SmartCity_FaaS/old
+std_error.log
+std_output.log
+tripinfos.xml

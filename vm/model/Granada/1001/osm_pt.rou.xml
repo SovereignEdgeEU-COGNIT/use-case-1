@@ -1,40 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2024-03-15 11:57:05.271225 by $Id: ptlines2flows.py v1_3_1+0313-ccb31df3eb jakob.erdmann@dlr.de 2019-09-02 13:26:32 +0200 $ v1_14_1+0000-f654d7b963e
-  options: 
+<!-- generated on 2025-08-13 23:19:15.447736 by osmWebWizard.py v1_24_0+0000-b72eb3fabc8
+<configuration>
+    <net-file value="C:\Users\antonio.lalaguna\Downloads\NUCLIS Save-V2X\Docs Drive\03 Implementacion\Bus priority GRANADA\SUMO\1030\2025-08-13-23-16-16\osm.net.xml.gz"/>
+    <ptlines-file value="C:\Users\antonio.lalaguna\Downloads\NUCLIS Save-V2X\Docs Drive\03 Implementacion\Bus priority GRANADA\SUMO\1030\2025-08-13-23-16-16\osm_ptlines.xml"/>
+    <ptstops-file value="C:\Users\antonio.lalaguna\Downloads\NUCLIS Save-V2X\Docs Drive\03 Implementacion\Bus priority GRANADA\SUMO\1030\2025-08-13-23-16-16\osm_stops.add.xml"/>
+    <output-file value="C:\Users\antonio.lalaguna\Downloads\NUCLIS Save-V2X\Docs Drive\03 Implementacion\Bus priority GRANADA\SUMO\1030\2025-08-13-23-16-16\osm_pt.rou.xml"/>
+    <stopinfos-file value="C:\Users\antonio.lalaguna\Downloads\NUCLIS Save-V2X\Docs Drive\03 Implementacion\Bus priority GRANADA\SUMO\1030\2025-08-13-23-16-16\stopinfos.xml"/>
+    <routes-file value="C:\Users\antonio.lalaguna\Downloads\NUCLIS Save-V2X\Docs Drive\03 Implementacion\Bus priority GRANADA\SUMO\1030\2025-08-13-23-16-16\vehroutes.xml"/>
+    <trips-file value="C:\Users\antonio.lalaguna\Downloads\NUCLIS Save-V2X\Docs Drive\03 Implementacion\Bus priority GRANADA\SUMO\1030\2025-08-13-23-16-16\trips.trips.xml"/>
+    <end value="900.0"/>
+    <min-stops value="0"/>
+    <extend-to-fringe value="True"/>
+    <random-begin value="True"/>
+    <seed value="42"/>
+    <ignore-errors value="True"/>
+    <vtype-prefix value="pt_"/>
+    <verbose value="True"/>
+</configuration>
 -->
 
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
     <vType id="pt_bus" vClass="bus"/>
     <vType id="pt_tram" vClass="tram"/>
     <vType id="pt_train" vClass="rail"/>
-    <vType id="pt_subway" vClass="rail_urban"/>
+    <vType id="pt_subway" vClass="subway"/>
     <vType id="pt_light_rail" vClass="rail_urban"/>
-    <vType id="pt_monorail" vClass="rail"/>
+    <vType id="pt_monorail" vClass="rail_urban"/>
     <vType id="pt_trolleybus" vClass="bus"/>
     <vType id="pt_minibus" vClass="bus"/>
     <vType id="pt_share_taxi" vClass="taxi"/>
-    <vType id="pt_aerialway" vClass="bus"/>
+    <vType id="pt_aerialway" vClass="cable_car" length="2.5" width="2" personCapacity="4"/>
     <vType id="pt_ferry" vClass="ship"/>
-    <route id="pt_bus_C5:0" color="197,52,55" edges="852348513#0 -852348513#1" >
+    <route id="pt_bus_0245:0" edges="-161424711#6 -6065718#2 130416694#0 673560718 852062314#0 852062315" >
+        <stop busStop="6043563055" duration="20" until="90.0"/> <!-- Acera del Darro 30 - Fuente de las Batallas -->
+    </route>
+    <route id="pt_bus_111:0" color="74,74,74" edges="764137063#0 673560719#0 161424709#0 6065718#0 161424711#0" >
+        <stop busStop="7138846959" duration="20" until="35.0"/> <!-- Acera del Darro 1 - Fuente de las Batallas -->
+    </route>
+    <route id="pt_bus_121:0" color="74,74,74" edges="852062315" >
+        <stop busStop="6043563055" duration="20" until="39.0"/> <!-- Acera del Darro 30 - Fuente de las Batallas -->
+    </route>
+    <route id="pt_bus_13:0" edges="764137063#0 28238522 6066208" >
+        <stop busStop="7138846959" duration="20" until="34.0"/> <!-- Acera del Darro 1 - Fuente de las Batallas -->
+    </route>
+    <route id="pt_bus_21:0" edges="764137063#0 673560719#0 161424709#0 6065718#0 161424711#0" >
+        <stop busStop="7138846959" duration="20" until="34.0"/> <!-- Acera del Darro 1 - Fuente de las Batallas -->
+        <stop busStop="6402593693" duration="20" until="120.0"/> <!-- Plaza del Carmen - Ayuntamiento -->
+    </route>
+    <route id="pt_bus_21:1" edges="-161424711#6 -6065718#2 130416694#0 673560718 852062314#0 852062315" >
+        <stop busStop="6043563055" duration="20" until="89.0"/> <!-- Acera del Darro 30 - Fuente de las Batallas -->
+    </route>
+    <route id="pt_bus_33:0" color="230,0,123" edges="-161424711#6 -6065718#2 130416694#0 673560718 852062314#0 852062315" >
+        <stop busStop="6043563055" duration="20" until="75.0"/> <!-- Acera del Darro 30 - Fuente de las Batallas -->
+    </route>
+    <route id="pt_bus_33:1" color="230,0,123" edges="764137063#0 673560719#0 161424709#0 6065718#0 161424711#0" >
+        <stop busStop="7138846959" duration="20" until="34.0"/> <!-- Acera del Darro 1 - Fuente de las Batallas -->
+    </route>
+    <route id="pt_bus_8:0" color="100,120,110" edges="-161424711#6 -6065718#2 130416694#0 673560718 852062314#0 852062315" >
+        <stop busStop="6043563055" duration="20" until="98.0"/> <!-- Acera del Darro 30 - Fuente de las Batallas -->
+    </route>
+    <route id="pt_bus_9:0" color="57,171,51" edges="764137063#0 673560719#0 161424709#0 -161424708#3 -161424714 -852348513#3" >
+        <stop busStop="6045647687" duration="20" until="54.0"/> <!-- Acera del Casino 5 - Puerta Real -->
+        <stop busStop="-6045647686" duration="20" until="126.0"/> <!-- Recogidas 2 -->
+    </route>
+    <route id="pt_bus_9:1" color="57,171,51" edges="852348513#0 852348513#4 161424708#0 130416694#0 673560718 852062314#0 852062315" >
+        <stop busStop="6043563052" duration="20" until="51.0"/> <!-- Recogidas 5 -->
+        <stop busStop="6043563055" duration="20" until="139.0"/> <!-- Acera del Darro 30 - Fuente de las Batallas -->
+    </route>
+    <route id="pt_bus_C5:0" color="197,52,55" edges="852348513#0 852348513#4 161424708#0 130416692#0 1360053236 870690834" >
         <stop busStop="6043563052" duration="20" until="52.0"/> <!-- Recogidas 5 -->
+        <stop busStop="7191341749" duration="20" until="126.0"/> <!-- Ángel Ganivet 2 -->
     </route>
-    <route id="pt_bus_9:0" color="57,171,51" edges="673560719#0 161424709#0 -161424708#1 -161424714 -852348513#4 -852348513#1" >
-        <stop busStop="6045647687" duration="20" until="46.0"/> <!-- Acera del Casino 5 - Puerta Real -->
+    <route id="pt_bus_S2:0" color="137,35,33" edges="764137063#0 28238522 6066208" >
+        <stop busStop="7138846959" duration="20" until="33.0"/> <!-- Acera del Darro 1 - Fuente de las Batallas -->
     </route>
-    <route id="pt_bus_9:1" color="57,171,51" edges="852348513#0 852348513#4 161424714 161424708#0 130416694#0 130416694#2 673560718" >
-        <stop busStop="6043563052" duration="20" until="53.0"/> <!-- Recogidas 5 -->
-    </route>
-    <flow id="pt_bus_C5:0" type="pt_bus" route="pt_bus_C5:0" begin="15.0" end="3615.0" period="600" line="C5:0" >
-        <param key="name" value="Bus C5: Neptuno → Centro"/>
+    <flow id="pt_bus_111:0" type="pt_bus" route="pt_bus_111:0" begin="15.0" end="915.0" period="600" line="111:0" >
+        <param key="name" value="Bus 111: Búho Camino de Ronda → Ayuntamiento → Gran Vía"/>
+        <param key="completeness" value="0.01"/>
+    </flow>
+    <flow id="pt_bus_13:0" type="pt_bus" route="pt_bus_13:0" begin="406.0" end="1306.0" period="600" line="13:0" >
+        <param key="name" value="Bus 13: Cementerio → Puerta Real"/>
+        <param key="completeness" value="0.05"/>
+    </flow>
+    <flow id="pt_bus_21:0" type="pt_bus" route="pt_bus_21:0" begin="444.0" end="1344.0" period="600" line="21:0" >
+        <param key="name" value="Bus 21: Estación de Autobuses → Centro → Parque de las Ciencias"/>
+        <param key="completeness" value="0.07"/>
+    </flow>
+    <flow id="pt_bus_21:1" type="pt_bus" route="pt_bus_21:1" begin="535.0" end="1435.0" period="600" line="21:1" >
+        <param key="name" value="Bus 21: Parque de las Ciencias → Centro → Estación de Autobuses"/>
         <param key="completeness" value="0.04"/>
     </flow>
-    <flow id="pt_bus_9:0" type="pt_bus" route="pt_bus_9:0" begin="165.0" end="3765.0" period="600" line="9:0" >
-        <param key="name" value="Bus 9: Los Rebites → Chana"/>
+    <flow id="pt_bus_121:0" type="pt_bus" route="pt_bus_121:0" begin="15.0" end="915.0" period="600" line="121:0" >
+        <param key="name" value="Bus 121: Búho Gran Vía → Violón → Camino de Ronda"/>
+        <param key="completeness" value="0.01"/>
+    </flow>
+    <flow id="pt_bus_33:0" type="pt_bus" route="pt_bus_33:0" begin="17.0" end="917.0" period="600" line="33:0" >
+        <param key="name" value="Bus 33: Estación de Autobuses → Cenes de la Vega"/>
         <param key="completeness" value="0.02"/>
     </flow>
-    <flow id="pt_bus_9:1" type="pt_bus" route="pt_bus_9:1" begin="383.0" end="3983.0" period="600" line="9:1" >
+    <flow id="pt_bus_C5:0" type="pt_bus" route="pt_bus_C5:0" begin="52.0" end="952.0" period="600" line="C5:0" >
+        <param key="name" value="Bus C5: Neptuno → Centro"/>
+        <param key="completeness" value="0.08"/>
+    </flow>
+    <flow id="pt_bus_9:0" type="pt_bus" route="pt_bus_9:0" begin="131.0" end="1031.0" period="600" line="9:0" >
+        <param key="name" value="Bus 9: Los Rebites → Chana"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_bus_S2:0" type="pt_bus" route="pt_bus_S2:0" begin="136.0" end="1036.0" period="600" line="S2:0" >
+        <param key="name" value="Bus S2: Villa Argaz → Centro"/>
+        <param key="completeness" value="0.06"/>
+    </flow>
+    <flow id="pt_bus_9:1" type="pt_bus" route="pt_bus_9:1" begin="165.0" end="1065.0" period="600" line="9:1" >
         <param key="name" value="Bus 9: Chana → Los Rebites"/>
-        <param key="completeness" value="0.01"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_bus_0245:0" type="pt_bus" route="pt_bus_0245:0" begin="253.0" end="1153.0" period="600" line="0245:0" >
+        <param key="name" value="Bus 0245: Aeropuerto → Granada"/>
+        <param key="completeness" value="0.09"/>
+    </flow>
+    <flow id="pt_bus_33:1" type="pt_bus" route="pt_bus_33:1" begin="303.0" end="1203.0" period="600" line="33:1" >
+        <param key="name" value="Bus 33: Cenes de la Vega → Estación de Autobuses"/>
+        <param key="completeness" value="0.02"/>
+    </flow>
+    <flow id="pt_bus_8:0" type="pt_bus" route="pt_bus_8:0" begin="383.0" end="1283.0" period="600" line="8:0" >
+        <param key="name" value="Bus 8: Camino de Alfacar → Palacio de Deportes"/>
+        <param key="completeness" value="0.03"/>
     </flow>
 </routes>

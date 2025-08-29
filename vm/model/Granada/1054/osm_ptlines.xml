@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-08-13 23:19:13 by Eclipse SUMO netconvert Version 1.24.0
--->
-
+<!-- generated on 2025-08-19 16:57:32 by Eclipse SUMO netconvert Version 1.24.0
 <netconvertConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
 
     <input>
@@ -18,6 +16,10 @@
         <ptline-output value="osm_ptlines.xml"/>
         <ptline-clean-up value="true"/>
     </output>
+
+    <projection>
+        <proj.utm value="true"/>
+    </projection>
 
     <processing>
         <geometry.remove value="true"/>
@@ -45,3 +47,7 @@
     </railway>
 
 </netconvertConfiguration>
+-->
+
+<ptLines xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/ptlines_file.xsd">
+</ptLines>

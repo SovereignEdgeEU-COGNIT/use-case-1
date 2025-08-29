@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2024-03-15 11:57:04 by Eclipse SUMO netconvert Version 1.14.1
-<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+<!-- generated on 2025-08-13 23:19:13 by Eclipse SUMO netconvert Version 1.24.0
+<netconvertConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
 
     <input>
-        <type-files value="C:\Program%20Files%20(x86)\Eclipse\Sumo\data\typemap\osmNetconvert.typ.xml"/>
+        <type-files value="${SUMO_HOME}\data\typemap\osmNetconvert.typ.xml,${SUMO_HOME}\data\typemap\osmNetconvertAerialway.typ.xml"/>
         <osm-files value="osm_bbox.osm.xml.gz"/>
     </input>
 
     <output>
-        <output-file value="osm.net.xml"/>
+        <output-file value="osm.net.xml.gz"/>
         <output.street-names value="true"/>
         <output.original-names value="true"/>
         <ptstop-output value="osm_stops.add.xml"/>
         <ptline-output value="osm_ptlines.xml"/>
+        <ptline-clean-up value="true"/>
     </output>
 
     <projection>
@@ -45,24 +46,64 @@
         <railway.topology.repair value="true"/>
     </railway>
 
-    <report>
-        <verbose value="true"/>
-    </report>
-
-</configuration>
+</netconvertConfiguration>
 -->
 
 <ptLines xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/ptlines_file.xsd">
-    <ptLine id="7488529" name="Bus C5: Neptuno → Centro" line="C5" type="bus" vClass="bus" color="197,52,55" completeness="0.04">
-        <route edges="852348513#0 852348513#4 161424714 161424708#0 130416692#0 130416692#2 161424710#0 161424710#1 -161424711#11 -6065718#2 -6065718#1 -161424708#1 -161424714 -852348513#4 -852348513#1"/>
-        <busStop id="6043563052" name="Recogidas 5"/>
+    <ptLine id="10598704" name="Bus 111: Búho Camino de Ronda → Ayuntamiento → Gran Vía" line="111" type="bus" vClass="bus" color="74,74,74" completeness="0.01" missingAfter="75">
+        <route edges="764137063#0 673560719#0 161424709#0 6065718#0 161424711#0"/>
+        <busStop id="7138846959" name="Acera del Darro 1 - Fuente de las Batallas"/>
     </ptLine>
-    <ptLine id="7787625" name="Bus 9: Los Rebites → Chana" line="9" type="bus" vClass="bus" color="57,171,51" completeness="0.02">
-        <route edges="673560719#0 161424709#0 -161424708#1 -161424714 -852348513#4 -852348513#1"/>
+    <ptLine id="10598806" name="Bus 121: Búho Gran Vía → Violón → Camino de Ronda" line="121" type="bus" vClass="bus" color="74,74,74" completeness="0.01" missingAfter="96">
+        <route edges="852062315 -161424711#6 -6065718#2 130416694#0 673560718 852062314#0 852062315"/>
+        <busStop id="6043563055" name="Acera del Darro 30 - Fuente de las Batallas"/>
+    </ptLine>
+    <ptLine id="7381803" name="Bus 33: Estación de Autobuses → Cenes de la Vega" line="33" type="bus" vClass="bus" color="230,0,123" completeness="0.02" missingBefore="11" missingAfter="29">
+        <route edges="-161424711#6 -6065718#2 130416694#0 673560718 852062314#0 852062315"/>
+        <busStop id="6043563055" name="Acera del Darro 30 - Fuente de las Batallas"/>
+    </ptLine>
+    <ptLine id="7488529" name="Bus C5: Neptuno → Centro" line="C5" type="bus" vClass="bus" color="197,52,55" completeness="0.08" missingBefore="11" missingAfter="12">
+        <route edges="852348513#0 852348513#4 161424708#0 130416692#0 1360053236 870690834 -161424711#6 -6065718#2 -161424708#3 -161424714 -852348513#3"/>
+        <busStop id="6043563052" name="Recogidas 5"/>
+        <busStop id="7191341749" name="Ángel Ganivet 2"/>
+    </ptLine>
+    <ptLine id="7787625" name="Bus 9: Los Rebites → Chana" line="9" type="bus" vClass="bus" color="57,171,51" completeness="0.03" missingBefore="24" missingAfter="31">
+        <route edges="764137063#0 673560719#0 161424709#0 -161424708#3 -161424714 -852348513#3"/>
         <busStop id="6045647687" name="Acera del Casino 5 - Puerta Real"/>
+        <busStop id="-6045647686" name="Recogidas 2"/>
     </ptLine>
-    <ptLine id="8896997" name="Bus 9: Chana → Los Rebites" line="9" type="bus" vClass="bus" color="57,171,51" completeness="0.01">
-        <route edges="852348513#0 852348513#4 161424714 161424708#0 130416694#0 130416694#2 673560718"/>
+    <ptLine id="7822382" name="Bus S2: Villa Argaz → Centro" line="S2" type="bus" vClass="bus" color="137,35,33" completeness="0.06" missingBefore="13" missingAfter="3">
+        <route edges="764137063#0 28238522 6066208"/>
+        <busStop id="7138846959" name="Acera del Darro 1 - Fuente de las Batallas"/>
+    </ptLine>
+    <ptLine id="8896997" name="Bus 9: Chana → Los Rebites" line="9" type="bus" vClass="bus" color="57,171,51" completeness="0.03" missingBefore="41" missingAfter="23">
+        <route edges="852348513#0 852348513#4 161424708#0 130416694#0 673560718 852062314#0 852062315"/>
         <busStop id="6043563052" name="Recogidas 5"/>
+        <busStop id="6043563055" name="Acera del Darro 30 - Fuente de las Batallas"/>
+    </ptLine>
+    <ptLine id="9275532" name="Bus 0245: Aeropuerto → Granada" line="0245" type="bus" vClass="bus" completeness="0.09" missingBefore="7" missingAfter="2">
+        <route edges="-161424711#6 -6065718#2 130416694#0 673560718 852062314#0 852062315"/>
+        <busStop id="6043563055" name="Acera del Darro 30 - Fuente de las Batallas"/>
+    </ptLine>
+    <ptLine id="9337179" name="Bus 33: Cenes de la Vega → Estación de Autobuses" line="33" type="bus" vClass="bus" color="230,0,123" completeness="0.02" missingBefore="30" missingAfter="16">
+        <route edges="764137063#0 673560719#0 161424709#0 6065718#0 161424711#0"/>
+        <busStop id="7138846959" name="Acera del Darro 1 - Fuente de las Batallas"/>
+    </ptLine>
+    <ptLine id="9479669" name="Bus 8: Camino de Alfacar → Palacio de Deportes" line="8" type="bus" vClass="bus" color="100,120,110" completeness="0.03" missingBefore="16" missingAfter="16">
+        <route edges="-161424711#6 -6065718#2 130416694#0 673560718 852062314#0 852062315"/>
+        <busStop id="6043563055" name="Acera del Darro 30 - Fuente de las Batallas"/>
+    </ptLine>
+    <ptLine id="9701518" name="Bus 13: Cementerio → Puerta Real" line="13" type="bus" vClass="bus" completeness="0.05" missingBefore="18" missingAfter="2">
+        <route edges="764137063#0 28238522 6066208"/>
+        <busStop id="7138846959" name="Acera del Darro 1 - Fuente de las Batallas"/>
+    </ptLine>
+    <ptLine id="9854714" name="Bus 21: Estación de Autobuses → Centro → Parque de las Ciencias" line="21" type="bus" vClass="bus" completeness="0.07" missingBefore="6" missingAfter="21">
+        <route edges="764137063#0 673560719#0 161424709#0 6065718#0 161424711#0"/>
+        <busStop id="7138846959" name="Acera del Darro 1 - Fuente de las Batallas"/>
+        <busStop id="6402593693" name="Plaza del Carmen - Ayuntamiento"/>
+    </ptLine>
+    <ptLine id="9854715" name="Bus 21: Parque de las Ciencias → Centro → Estación de Autobuses" line="21" type="bus" vClass="bus" completeness="0.04" missingBefore="15" missingAfter="7">
+        <route edges="-161424711#6 -6065718#2 130416694#0 673560718 852062314#0 852062315"/>
+        <busStop id="6043563055" name="Acera del Darro 30 - Fuente de las Batallas"/>
     </ptLine>
 </ptLines>
