@@ -1,8 +1,8 @@
-import time
-import examples.uc1_workload_gr_test_minimal_offload_sync_FaaS as faas
-
-
 from locust import HttpUser, task, between, events
+import time
+import uc1_workload_gr_test_minimal_offload_sync_FaaS as faas
+
+
 class UC1_Test(HttpUser):
     wait_time = between(1, 5)
 
@@ -10,7 +10,7 @@ class UC1_Test(HttpUser):
     def run_faas(self):
         start_time = time.time()
         try:
-            result = faas.faas_request()
+            result = faas.main()
         except Exception as e:
             print(">>> An exception has occured: " + str(e))
             exit(-1)
