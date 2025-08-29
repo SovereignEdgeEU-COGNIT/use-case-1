@@ -17,7 +17,7 @@ or
 locust -f ~/code/locust  --host https://dummy.com -u 10 -r 1 -t 1m
 
 ## Running remote FAAS calls workloads using locust
-(serverless-env) administr4d0r@cognit:~/code/device-runtime-py$ locust -f examples/uc1_workload_gr_test_minimal_offload_sync.py --host https://dummy.com -u 1 -r 1 -t 3m
+(serverless-env) administr4d0r@cognit:~/code/device-runtime-py$ locust -f examples/uc1_workload_gr_test_minimal_offload_sync_Locust.py --host https://dummy.com -u 1 -r 1 -t 3m
 
 ## Configure Locust as a service
 Prepare the file: /etc/systemd/system/locust.service  
@@ -28,7 +28,7 @@ Description=Locust integration with serverless FAAS
 [Service]
 User=administr4d0r
 WorkingDirectory=/home/administr4d0r/code/device-runtime-py
-ExecStart=/home/administr4d0r/code/device-runtime-py/serverless-env/bin/python -m locust -f examples/uc1_workload_gr_test_minimal_offload_sync.py --host https://dummy.com -u 1 -r 1 -t 3m
+ExecStart=/home/administr4d0r/code/device-runtime-py/serverless-env/bin/python -m locust -f examples/uc1_workload_gr_test_minimal_offload_sync_Locust.py --host https://dummy.com -u 1 -r 1 -t 3m
 
 [Install]
 WantedBy=multi-user.target
