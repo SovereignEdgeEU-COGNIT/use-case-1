@@ -1,18 +1,38 @@
 # Cognit use case for Smartcities
-This repository includes a device client configuration and code to validate and test how to leverage the cognit framework used from a device in the Edge, to make remote FaaS calls running a Sumo(Simulation of Urban MObility - https://eclipse.dev/sumo/) simulation, process the results and send them back to the calling device at the Edge.
+This repository includes a device client configuration and code to validate and test how to leverage the cognit framework used from a device in the Edge, to make remote FaaS calls running a SUMO(Simulation of Urban MObility - https://eclipse.dev/sumo/) simulation, process the results and send them back to the calling device at the Edge.
 
 This repository contains two main folders, `SmartCity_Faas` and `vm`.
 
 ## SmartCity_Faas
-Shows the function we are using to call the Cognit framework from a device at the Edge. It is mostly based on the examples provided by the https://github.com/SovereignEdgeEU-COGNIT/device-runtime-py/tree/main/examples repository, from the developers of the device runtime for Cognit. Our code has some minor adaptations needed for our use case. The instructions to execute this code can be found in this link (https://github.com/SovereignEdgeEU-COGNIT/device-runtime-py/blob/main/examples/README.md)  
-In this project we have been also doing performance tests, and for this reason we included a class to run performance tests, `class UC1_Test` in the `uc1_workload_gr_test_minimal_offload_sync_Locust.py` file.
+Shows the function we are using to call the Cognit framework from a device at the M-Hub Edge(Mobility Hub Edge). It is mostly based on the examples provided by the https://github.com/SovereignEdgeEU-COGNIT/device-runtime-py/tree/main/examples repository, from the developers of the device runtime for Cognit. Our code has adaptations needed for our use case. The instructions to execute this code can be found in this link (https://github.com/SovereignEdgeEU-COGNIT/device-runtime-py/blob/main/examples/README.md)  
+In this project we have been also doing performance tests, and for this reason we included a class to run performance tests, `class UC1_Test` in the `uc1_locust.py` file.
 
-Our function expects certain environment vars defined:
+### Configuration files
+Our function expects certain configuration values defined in two files:
+1. `cognit.properties`: This is a properties files with two sections: 
+`[default]`
+This section is specific for our use case 
 * `ACCESS_KEY_ID`, `SECRET_ACCESS_KEY`: Credentials to access the DaaS. Required.
 * `CITY`: City name. Used to compose the path where the SUMO model is stored. Required.
 * `JUNCTION`: String with the junction code to simulate. Used to compose the path where the SUMO model is stored. Required
 * `FORCE_CONGESTION`: Usually the congestion is a value stored in the DaaS by one process running in Saturno. This envvar is available to force a situation of congestion. Valida values are LOW, MEDIUM, HIGH. Not required
 * `CACHE_RESULTS`: When true, the result of the simulation and its context is stored in the DaaS, so that it can be reused without running the simulation, if the context is the same. The context includes values as workday or weekend, season, hourly range, and level of congestion. When false, the precalculated values are not used, everytime there is a request the simulation is run and the resulting value is stored in the DaaS for future use.
+
+`[requirements]`
+This section is generic for all the use cases and we leave the explanation of the fields to the developers of the device client framework.
+* `FLAVOUR`: There is a list of service Flavours supported by the device client. For our use case, wil be Smartcity
+* `IS_CONFIDENTIAL`
+* `PROVIDERS` 
+* `MAX_FUNCTION_EXECUTION_TIME`
+* `MAX_LATENCY`
+* `MIN_ENERGY_RENEWABLE_USAGE`
+* `LATITUDE`
+* `LONGITUDE`
+
+2. cognit-ice.yml
+This file contains two parameters, required by the device client framework:
+* `api_endpoint`: "https://cognit-lab-frontend.sovereignedge.eu"
+* `credentials`: Colon separated user and password used by the device client access the Cognit frontend.
 
 ## vm folder
 The other one, **vm** is the stuff that we need deployed in the Cognit framework images used by the vm instances running the FaaS for our use case.
@@ -33,12 +53,10 @@ Please see this copyright notice https://www.openstreetmap.org/copyright
 ## Installing the Sumo models in the image
 Create the following directory structure in the VM to be used to generate the FAAS image:  
 * /opt/smartcity_faas/model
-* /opt/smartcity_faas/model/Granada/1001
-* /opt/smartcity_faas/model/Granada/1030
-* /opt/smartcity_faas/model/Granada/1054
+* /opt/smartcity_faas/model/Granada/{junction code}
 
   
-Terrassa and Granada are some sample cities included in the model. In addition under Granada we create some junction models 1001, 1030, 1054. Each model is independent from the others.  
+Granada is the sample cities included in the model. In addition under Granada we create some junction models identified by id. Each model is independent from the others.  
 When the directory structure is ready, then copy the use-case-1/vm/model content to the /opt/smartcity_faas/model in the image.
 
 ## Installing the Sumo tool in the image
@@ -54,10 +72,10 @@ And add a new environment variable to the system profile:
 `export SUMO_HOME=/usr/share/sumo`
 
 In addition, the scripts files:
-- use-case-1/vm/call_sumo.sh
-- use-case-1/vm/parse_emission.py
+- `use-case-1/vm/call_sumo.sh`
+- `use-case-1/vm/parse_emission.py`
 
-Need to be copied to the /opt/smartcity_faas folder on the image.
+Need to be copied to the `/opt/smartcity_faas` folder on the image.
 
 ## Remote FaaS calls
 In this section, we are detailing how  to make remote calls or the results obtained.  
