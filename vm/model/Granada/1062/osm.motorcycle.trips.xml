@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-08-19 16:57:34.305930 by osmWebWizard.py v1_24_0+0000-b72eb3fabc8
+<configuration>
+    <net-file value="C:\Users\antonio.lalaguna\2025-08-19-16-57-28\osm.net.xml.gz"/>
+    <output-trip-file value="C:\Users\antonio.lalaguna\2025-08-19-16-57-28\osm.motorcycle.trips.xml"/>
+    <route-file value="C:\Users\antonio.lalaguna\2025-08-19-16-57-28\osm.motorcycle.rou.xml"/>
+    <prefix value="motorcycle"/>
+    <trip-attributes value="departLane=&quot;best&quot;"/>
+    <fringe-start-attributes value="departSpeed=&quot;max&quot;"/>
+    <vehicle-class value="motorcycle"/>
+    <fringe-factor value="2"/>
+    <edge-permission value="motorcycle"/>
+    <via-edge-types value="highway.motorway,highway.motorway_link,highway.trunk_link,highway.primary_link,highway.secondary_link,highway.tertiary_link"/>
+    <seed value="43"/>
+    <max-distance value="1200.0"/>
+    <remove-loops value="True"/>
+    <end value="1800.0"/>
+    <insertion-density value="3.0"/>
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="motorcycle_motorcycle" vClass="motorcycle"/>
+    <trip id="motorcycle0" depart="0.00" from="-34913312" to="862945109" departLane="best" type="motorcycle_motorcycle"/>
+    <trip id="motorcycle1" depart="393.39" from="128798641" to="462530329#0" departLane="best" type="motorcycle_motorcycle" departSpeed="max"/>
+    <trip id="motorcycle2" depart="786.77" from="768635584" to="862945113" departLane="best" type="motorcycle_motorcycle"/>
+    <trip id="motorcycle3" depart="1180.16" from="179587970" to="462530329#0" departLane="best" type="motorcycle_motorcycle"/>
+    <trip id="motorcycle4" depart="1573.55" from="-179587970" to="378872531" departLane="best" type="motorcycle_motorcycle"/>
+</routes>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-08-13 21:16:52.361430 by osmWebWizard.py v1_24_0+0000-b72eb3fabc8
+<configuration>
+    <net-file value="C:\Users\antonio.lalaguna\Downloads\NUCLIS Save-V2X\Docs Drive\03 Implementacion\Bus priority GRANADA\SUMO\1030\2025-08-13-21-13-54\osm.net.xml.gz"/>
+    <ptlines-file value="C:\Users\antonio.lalaguna\Downloads\NUCLIS Save-V2X\Docs Drive\03 Implementacion\Bus priority GRANADA\SUMO\1030\2025-08-13-21-13-54\osm_ptlines.xml"/>
+    <ptstops-file value="C:\Users\antonio.lalaguna\Downloads\NUCLIS Save-V2X\Docs Drive\03 Implementacion\Bus priority GRANADA\SUMO\1030\2025-08-13-21-13-54\osm_stops.add.xml"/>
+    <output-file value="C:\Users\antonio.lalaguna\Downloads\NUCLIS Save-V2X\Docs Drive\03 Implementacion\Bus priority GRANADA\SUMO\1030\2025-08-13-21-13-54\osm_pt.rou.xml"/>
+    <stopinfos-file value="C:\Users\antonio.lalaguna\Downloads\NUCLIS Save-V2X\Docs Drive\03 Implementacion\Bus priority GRANADA\SUMO\1030\2025-08-13-21-13-54\stopinfos.xml"/>
+    <routes-file value="C:\Users\antonio.lalaguna\Downloads\NUCLIS Save-V2X\Docs Drive\03 Implementacion\Bus priority GRANADA\SUMO\1030\2025-08-13-21-13-54\vehroutes.xml"/>
+    <trips-file value="C:\Users\antonio.lalaguna\Downloads\NUCLIS Save-V2X\Docs Drive\03 Implementacion\Bus priority GRANADA\SUMO\1030\2025-08-13-21-13-54\trips.trips.xml"/>
+    <end value="900.0"/>
+    <min-stops value="0"/>
+    <extend-to-fringe value="True"/>
+    <random-begin value="True"/>
+    <seed value="42"/>
+    <ignore-errors value="True"/>
+    <vtype-prefix value="pt_"/>
+    <verbose value="True"/>
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="pt_bus" vClass="bus"/>
+    <vType id="pt_tram" vClass="tram"/>
+    <vType id="pt_train" vClass="rail"/>
+    <vType id="pt_subway" vClass="subway"/>
+    <vType id="pt_light_rail" vClass="rail_urban"/>
+    <vType id="pt_monorail" vClass="rail_urban"/>
+    <vType id="pt_trolleybus" vClass="bus"/>
+    <vType id="pt_minibus" vClass="bus"/>
+    <vType id="pt_share_taxi" vClass="taxi"/>
+    <vType id="pt_aerialway" vClass="cable_car" length="2.5" width="2" personCapacity="4"/>
+    <vType id="pt_ferry" vClass="ship"/>
+    <route id="pt_bus_0170A:0" edges="675971774#0 530758862 171825747#0" >
+        <stop busStop="6260223361" duration="20" until="82.0"/> <!-- Tierno Galván - Palacio de Congresos -->
+    </route>
+    <route id="pt_bus_0170A:1" edges="171825747#0" >
+        <stop busStop="6260223361" duration="20" until="92.0"/> <!-- Tierno Galván - Palacio de Congresos -->
+    </route>
+    <route id="pt_bus_0170B:0" edges="171825747#0" >
+        <stop busStop="6260223361" duration="20" until="87.0"/> <!-- Tierno Galván - Palacio de Congresos -->
+    </route>
+    <route id="pt_bus_0170B:1" edges="675971774#0 530758862 171825747#0" >
+        <stop busStop="6260223361" duration="20" until="57.0"/> <!-- Tierno Galván - Palacio de Congresos -->
+    </route>
+    <route id="pt_bus_0171:0" edges="171825747#0" >
+        <stop busStop="6260223361" duration="20" until="157.0"/> <!-- Tierno Galván - Palacio de Congresos -->
+    </route>
+    <route id="pt_bus_0171:1" edges="675971774#0 530758862 171825747#0" >
+        <stop busStop="6260223361" duration="20" until="193.0"/> <!-- Tierno Galván - Palacio de Congresos -->
+    </route>
+    <route id="pt_bus_0174A:0" edges="1162743956#0 1162743957#0 509283334#0 9712679 862094922 530758863 530758862 171825747#0" >
+        <stop busStop="6260223361" duration="20" until="194.0"/> <!-- Tierno Galván - Palacio de Congresos -->
+    </route>
+    <route id="pt_bus_0174B:0" edges="675971774#0 530758862 171825747#0" >
+        <stop busStop="6260223361" duration="20" until="79.0"/> <!-- Tierno Galván - Palacio de Congresos -->
+    </route>
+    <route id="pt_bus_0175:0" edges="171825747#0" >
+        <stop busStop="6260223361" duration="20" until="77.0"/> <!-- Tierno Galván - Palacio de Congresos -->
+    </route>
+    <route id="pt_bus_0175:1" edges="1162743956#0 1162743957#0 509283334#0 9712679 862094922 530758863 530758862 171825747#0" >
+        <stop busStop="9743415512" duration="20" until="35.0"/> <!-- Manuel de Góngora 1 -->
+        <stop busStop="6260223361" duration="20" until="312.0"/> <!-- Tierno Galván - Palacio de Congresos -->
+    </route>
+    <route id="pt_bus_0177:0" edges="171825747#0" >
+        <stop busStop="6260223361" duration="20" until="76.0"/> <!-- Tierno Galván - Palacio de Congresos -->
+    </route>
+    <route id="pt_bus_0177:1" edges="1162743956#0 1162743957#0 509283334#0 9712679 862094922 530758863 530758862 171825747#0" >
+        <stop busStop="9743415512" duration="20" until="36.0"/> <!-- Manuel de Góngora 1 -->
+        <stop busStop="6260223361" duration="20" until="155.0"/> <!-- Tierno Galván - Palacio de Congresos -->
+    </route>
+    <route id="pt_bus_0245:0" edges="666985090 129301668#0 184573005#0 820510903 28238524#0 378872530#0" >
+        <stop busStop="552784604" duration="20" until="38.0"/> <!-- Palacio de Congresos - Plaza Rotary -->
+    </route>
+    <route id="pt_bus_0245:1" edges="161424705#0 184573004#0 129301692 509283334#0 9712679 862094922 530758863 530758862 666985090" >
+        <stop busStop="552784604" duration="20" until="160.0"/> <!-- Palacio de Congresos - Plaza Rotary -->
+    </route>
+    <route id="pt_bus_0275:0" edges="171825747#0" >
+        <stop busStop="6260223361" duration="20" until="45.0"/> <!-- Tierno Galván - Palacio de Congresos -->
+    </route>
+    <route id="pt_bus_0390:0" edges="1162743956#0 1162743957#0 166107155#0" >
+        <stop busStop="9743415512" duration="20" until="34.0"/> <!-- Manuel de Góngora 1 -->
+        <stop busStop="9803824408" duration="20" until="128.0"/> <!-- Paseo de los Basilios -->
+    </route>
+    <route id="pt_bus_0390:1" edges="166107155#0" >
+        <stop busStop="9803824408" duration="20" until="46.0"/> <!-- Paseo de los Basilios -->
+    </route>
+    <route id="pt_bus_0395:0" edges="1162743956#0 1162743957#0 166107155#0" >
+        <stop busStop="9743415512" duration="20" until="34.0"/> <!-- Manuel de Góngora 1 -->
+        <stop busStop="9803824408" duration="20" until="117.0"/> <!-- Paseo de los Basilios -->
+    </route>
+    <route id="pt_bus_0395:1" edges="166107155#0" >
+        <stop busStop="9803824408" duration="20" until="47.0"/> <!-- Paseo de los Basilios -->
+    </route>
+    <route id="pt_bus_111:0" color="74,74,74" edges="202438589#0 673560717 179959896#0 378872530#0" >
+        <stop busStop="5939512652" duration="20" until="62.0"/> <!-- Plaza del Humilladero 1 -->
+    </route>
+    <route id="pt_bus_121:0" color="74,74,74" edges="161424705#0 184573004#0 129301692 509283334#0 9712679 862094922 530758863 530758862 666985090 129301668#0 166107155#0" >
+        <stop busStop="4215841922" duration="20" until="56.0"/> <!-- Acera del Darro 96 -->
+        <stop busStop="552784604" duration="20" until="157.0"/> <!-- Palacio de Congresos - Plaza Rotary -->
+        <stop busStop="2293379862" duration="20" until="273.0"/> <!-- Paseo de los Basilios 2 - Escolapios -->
+    </route>
+    <route id="pt_bus_13:0" edges="666985090 129301668#0 166107155#0" >
+        <stop busStop="552784604" duration="20" until="74.0"/> <!-- Palacio de Congresos - Plaza Rotary -->
+        <stop busStop="2293379862" duration="20" until="161.0"/> <!-- Paseo de los Basilios 2 - Escolapios -->
+    </route>
+    <route id="pt_bus_13:1" edges="202438589#0 673560717 179959896#0 378872530#0" >
+        <stop busStop="5939512652" duration="20" until="60.0"/> <!-- Plaza del Humilladero 1 -->
+    </route>
+    <route id="pt_bus_21:0" edges="675971774#0 530758862 666985090 129301668#0 184573005#0 820510903 28238524#0 378872530#0" >
+        <stop busStop="552784604" duration="20" until="53.0"/> <!-- Palacio de Congresos - Plaza Rotary -->
+    </route>
+    <route id="pt_bus_33:0" color="230,0,123" edges="161424705#0 184573004#0 129301692 166107155#0" >
+        <stop busStop="2293379862" duration="20" until="126.0"/> <!-- Paseo de los Basilios 2 - Escolapios -->
+    </route>
+    <route id="pt_bus_33:1" color="230,0,123" edges="202438589#0 673560717 179959896#0 378872530#0" >
+        <stop busStop="5939512652" duration="20" until="60.0"/> <!-- Plaza del Humilladero 1 -->
+    </route>
+    <route id="pt_bus_4:0" color="228,0,16" edges="161424705#0 184573004#0 129301692 509283334#0 9712679 862094922 530758863 530758862 171825747#0" >
+        <stop busStop="6396850973" duration="20" until="52.0"/> <!-- Acera del Darro 98 - Humilladero -->
+        <stop busStop="6646330702" duration="20" until="157.0"/> <!-- Tierno Galván - Palacio de Congresos -->
+    </route>
+    <route id="pt_bus_8:0" color="100,120,110" edges="161424705#0 184573004#0 129301692 509283334#0 9712679 862094922 530758863 530758862 171825747#0" >
+        <stop busStop="6646330702" duration="20" until="116.0"/> <!-- Tierno Galván - Palacio de Congresos -->
+    </route>
+    <route id="pt_bus_9:0" color="57,171,51" edges="161424705#0 184573004#0 129301692 509283334#0 9712679 862094922 530758863 530758862 666985090 129301668#0 166107155#0" >
+        <stop busStop="552784604" duration="20" until="127.0"/> <!-- Palacio de Congresos - Plaza Rotary -->
+        <stop busStop="2293379862" duration="20" until="206.0"/> <!-- Paseo de los Basilios 2 - Escolapios -->
+    </route>
+    <route id="pt_bus_S2:0" color="137,35,33" edges="1162743956#0 1162743957#0 184573005#0 820510903 28238524#0 378872530#0" >
+        <stop busStop="1897894627" duration="20" until="34.0"/> <!-- Poeta Manuel de Góngora 9 -->
+    </route>
+    <route id="pt_bus_S2:1" color="137,35,33" edges="171825747#0" >
+        <stop busStop="6646330702" duration="20" until="41.0"/> <!-- Tierno Galván - Palacio de Congresos -->
+    </route>
+    <flow id="pt_bus_111:0" type="pt_bus" route="pt_bus_111:0" begin="3.0" end="903.0" period="600" line="111:0" >
+        <param key="name" value="Bus 111: Búho Camino de Ronda → Ayuntamiento → Gran Vía"/>
+        <param key="completeness" value="0.01"/>
+    </flow>
+    <flow id="pt_bus_0171:1" type="pt_bus" route="pt_bus_0171:1" begin="132.0" end="1032.0" period="600" line="0171:1" >
+        <param key="name" value="Bus 0171: Dílar → Gójar → Ogíjares → Granada"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_bus_0395:0" type="pt_bus" route="pt_bus_0395:0" begin="133.0" end="1033.0" period="600" line="0395:0" >
+        <param key="name" value="Bus 0395: Quéntar → Dúdar → Cenes de la Vega → Granada"/>
+        <param key="completeness" value="0.06"/>
+    </flow>
+    <flow id="pt_bus_0395:1" type="pt_bus" route="pt_bus_0395:1" begin="165.0" end="1065.0" period="600" line="0395:1" >
+        <param key="name" value="Bus 0395: Granada → Cenes de la Vega→ Dúdar → Quéntar"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_bus_33:0" type="pt_bus" route="pt_bus_33:0" begin="201.0" end="1101.0" period="600" line="33:0" >
+        <param key="name" value="Bus 33: Estación de Autobuses → Cenes de la Vega"/>
+        <param key="completeness" value="0.02"/>
+    </flow>
+    <flow id="pt_bus_0245:0" type="pt_bus" route="pt_bus_0245:0" begin="204.0" end="1104.0" period="600" line="0245:0" >
+        <param key="name" value="Bus 0245: Granada → Aeropuerto"/>
+        <param key="completeness" value="0.09"/>
+    </flow>
+    <flow id="pt_bus_4:0" type="pt_bus" route="pt_bus_4:0" begin="253.0" end="1153.0" period="600" line="4:0" >
+        <param key="name" value="Bus 4: Chana → Zaidín"/>
+        <param key="completeness" value="0.06"/>
+    </flow>
+    <flow id="pt_bus_S2:0" type="pt_bus" route="pt_bus_S2:0" begin="303.0" end="1203.0" period="600" line="S2:0" >
+        <param key="name" value="Bus S2: Villa Argaz → Centro"/>
+        <param key="completeness" value="0.06"/>
+    </flow>
+    <flow id="pt_bus_0177:0" type="pt_bus" route="pt_bus_0177:0" begin="326.0" end="1226.0" period="600" line="0177:0" >
+        <param key="name" value="Bus 0177: Granada → La Zubia (Campo de Fútbol)"/>
+        <param key="completeness" value="0.05"/>
+    </flow>
+    <flow id="pt_bus_0170B:0" type="pt_bus" route="pt_bus_0170B:0" begin="353.0" end="1253.0" period="600" line="0170B:0" >
+        <param key="name" value="Bus 0170B: Granada → Ogíjares → Las Pedrizas → Lomalinda"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_bus_0390:0" type="pt_bus" route="pt_bus_0390:0" begin="362.0" end="1262.0" period="600" line="0390:0" >
+        <param key="name" value="Bus 0390: Güéjar Sierra → Pinos Genil → Granada"/>
+        <param key="completeness" value="0.05"/>
+    </flow>
+    <flow id="pt_bus_121:0" type="pt_bus" route="pt_bus_121:0" begin="15.0" end="915.0" period="600" line="121:0" >
+        <param key="name" value="Bus 121: Búho Gran Vía → Violón → Camino de Ronda"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_bus_9:0" type="pt_bus" route="pt_bus_9:0" begin="383.0" end="1283.0" period="600" line="9:0" >
+        <param key="name" value="Bus 9: Chana → Los Rebites"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_bus_0245:1" type="pt_bus" route="pt_bus_0245:1" begin="389.0" end="1289.0" period="600" line="0245:1" >
+        <param key="name" value="Bus 0245: Aeropuerto → Granada"/>
+        <param key="completeness" value="0.09"/>
+    </flow>
+    <flow id="pt_bus_0390:1" type="pt_bus" route="pt_bus_0390:1" begin="406.0" end="1306.0" period="600" line="0390:1" >
+        <param key="name" value="Bus 0390: Granada → Pinos Genil → Güéjar Sierra"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_bus_0170B:1" type="pt_bus" route="pt_bus_0170B:1" begin="418.0" end="1318.0" period="2100" line="0170B:1" >
+        <param key="name" value="Bus 0170B: Lomalinda → Las Pedrizas → Ogíjares → Granada"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_bus_0177:1" type="pt_bus" route="pt_bus_0177:1" begin="441.0" end="1341.0" period="600" line="0177:1" >
+        <param key="name" value="Bus 0177: La Zubia (Campo de Fútbol) → Granada"/>
+        <param key="completeness" value="0.10"/>
+    </flow>
+    <flow id="pt_bus_33:1" type="pt_bus" route="pt_bus_33:1" begin="483.0" end="1383.0" period="600" line="33:1" >
+        <param key="name" value="Bus 33: Cenes de la Vega → Estación de Autobuses"/>
+        <param key="completeness" value="0.02"/>
+    </flow>
+    <flow id="pt_bus_S2:1" type="pt_bus" route="pt_bus_S2:1" begin="484.0" end="1384.0" period="600" line="S2:1" >
+        <param key="name" value="Bus S2: Centro → Villa Argaz"/>
+        <param key="completeness" value="0.07"/>
+    </flow>
+    <flow id="pt_bus_8:0" type="pt_bus" route="pt_bus_8:0" begin="485.0" end="1385.0" period="600" line="8:0" >
+        <param key="name" value="Bus 8: Camino de Alfacar → Palacio de Deportes"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_bus_13:0" type="pt_bus" route="pt_bus_13:0" begin="514.0" end="1414.0" period="600" line="13:0" >
+        <param key="name" value="Bus 13: Puerta Real → Cementerio"/>
+        <param key="completeness" value="0.10"/>
+    </flow>
+    <flow id="pt_bus_13:1" type="pt_bus" route="pt_bus_13:1" begin="535.0" end="1435.0" period="600" line="13:1" >
+        <param key="name" value="Bus 13: Cementerio → Puerta Real"/>
+        <param key="completeness" value="0.05"/>
+    </flow>
+    <flow id="pt_bus_0275:0" type="pt_bus" route="pt_bus_0275:0" begin="15.0" end="915.0" period="600" line="0275:0" >
+        <param key="name" value="Bus 0275: Granada → La Zubia → Cumbres Verdes"/>
+        <param key="completeness" value="0.05"/>
+    </flow>
+    <flow id="pt_bus_21:0" type="pt_bus" route="pt_bus_21:0" begin="574.0" end="1474.0" period="600" line="21:0" >
+        <param key="name" value="Bus 21: Estación de Autobuses → Centro → Parque de las Ciencias"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_bus_0175:0" type="pt_bus" route="pt_bus_0175:0" begin="21.0" end="921.0" period="600" line="0175:0" >
+        <param key="name" value="Bus 0175: Granada → La Zubia (Laurel de la Reina)"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_bus_0175:1" type="pt_bus" route="pt_bus_0175:1" begin="52.0" end="952.0" period="600" line="0175:1" >
+        <param key="name" value="Bus 0175: La Zubia (Laurel de la Reina) → Granada"/>
+        <param key="completeness" value="0.07"/>
+    </flow>
+    <flow id="pt_bus_0174A:0" type="pt_bus" route="pt_bus_0174A:0" begin="55.0" end="955.0" period="600" line="0174A:0" >
+        <param key="name" value="Bus 0174A: Granada → Ogíjares → La Zubia"/>
+        <param key="completeness" value="0.02"/>
+    </flow>
+    <flow id="pt_bus_0174B:0" type="pt_bus" route="pt_bus_0174B:0" begin="58.0" end="958.0" period="600" line="0174B:0" >
+        <param key="name" value="Bus 0174B: Granada → La Zubia → Ogíjares"/>
+        <param key="completeness" value="0.02"/>
+    </flow>
+    <flow id="pt_bus_0170A:0" type="pt_bus" route="pt_bus_0170A:0" begin="93.0" end="993.0" period="600" line="0170A:0" >
+        <param key="name" value="Bus 0170A: Lomalinda → Ogíjares → Granada"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_bus_0170A:1" type="pt_bus" route="pt_bus_0170A:1" begin="119.0" end="1019.0" period="600" line="0170A:1" >
+        <param key="name" value="Bus 0170A: Granada → Ogíjares → Lomalinda"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_bus_0171:0" type="pt_bus" route="pt_bus_0171:0" begin="131.0" end="1031.0" period="600" line="0171:0" >
+        <param key="name" value="Bus 0171: Granada → Ogíjares → Gójar → Dílar"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+</routes>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-08-13 21:16:51 by Eclipse SUMO netconvert Version 1.24.0
+<netconvertConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <type-files value="${SUMO_HOME}\data\typemap\osmNetconvert.typ.xml,${SUMO_HOME}\data\typemap\osmNetconvertAerialway.typ.xml"/>
+        <osm-files value="osm_bbox.osm.xml.gz"/>
+    </input>
+
+    <output>
+        <output-file value="osm.net.xml.gz"/>
+        <output.street-names value="true"/>
+        <output.original-names value="true"/>
+        <ptstop-output value="osm_stops.add.xml"/>
+        <ptline-output value="osm_ptlines.xml"/>
+        <ptline-clean-up value="true"/>
+    </output>
+
+    <projection>
+        <proj.utm value="true"/>
+    </projection>
+
+    <processing>
+        <geometry.remove value="true"/>
+        <roundabouts.guess value="true"/>
+    </processing>
+
+    <tls_building>
+        <tls.discard-simple value="true"/>
+        <tls.join value="true"/>
+        <tls.guess-signals value="true"/>
+        <tls.default-type value="actuated"/>
+    </tls_building>
+
+    <ramp_guessing>
+        <ramps.guess value="true"/>
+    </ramp_guessing>
+
+    <junctions>
+        <junctions.join value="true"/>
+        <junctions.corner-detail value="5"/>
+    </junctions>
+
+    <railway>
+        <railway.topology.repair value="true"/>
+    </railway>
+
+</netconvertConfiguration>
+-->
+
+<ptLines xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/ptlines_file.xsd">
+    <ptLine id="10598704" name="Bus 111: Búho Camino de Ronda → Ayuntamiento → Gran Vía" line="111" type="bus" vClass="bus" color="74,74,74" completeness="0.01" missingBefore="73" missingAfter="2">
+        <route edges="202438589#0 673560717 179959896#0 378872530#0"/>
+        <busStop id="5939512652" name="Plaza del Humilladero 1"/>
+    </ptLine>
+    <ptLine id="10598806" name="Bus 121: Búho Gran Vía → Violón → Camino de Ronda" line="121" type="bus" vClass="bus" color="74,74,74" completeness="0.03" missingBefore="2" missingAfter="90">
+        <route edges="161424705#0 184573004#0 129301692 509283334#0 9712679 862094922 530758863 530758862 666985090 129301668#0 166107155#0"/>
+        <busStop id="4215841922" name="Acera del Darro 96"/>
+        <busStop id="552784604" name="Palacio de Congresos - Plaza Rotary"/>
+        <busStop id="2293379862" name="Paseo de los Basilios 2 - Escolapios"/>
+    </ptLine>
+    <ptLine id="13760623" name="Bus 0275: Granada → La Zubia → Cumbres Verdes" line="0275" type="bus" vClass="bus" completeness="0.05" missingAfter="17">
+        <busStop id="6260223361" name="Tierno Galván - Palacio de Congresos"/>
+    </ptLine>
+    <ptLine id="13764408" name="Bus 0175: Granada → La Zubia (Laurel de la Reina)" line="0175" type="bus" vClass="bus" completeness="0.04" missingAfter="22">
+        <busStop id="6260223361" name="Tierno Galván - Palacio de Congresos"/>
+    </ptLine>
+    <ptLine id="13764409" name="Bus 0175: La Zubia (Laurel de la Reina) → Granada" line="0175" type="bus" vClass="bus" completeness="0.07" missingBefore="26">
+        <route edges="1162743956#0 1162743957#0 509283334#0 9712679 862094922 530758863 530758862 171825747#0"/>
+        <busStop id="9743415512" name="Manuel de Góngora 1"/>
+        <busStop id="6260223361" name="Tierno Galván - Palacio de Congresos"/>
+    </ptLine>
+    <ptLine id="13766616" name="Bus 0174A: Granada → Ogíjares → La Zubia" line="0174A" type="bus" vClass="bus" completeness="0.02" missingAfter="45">
+        <route edges="1162743956#0 1162743957#0 509283334#0 9712679 862094922 530758863 530758862 171825747#0"/>
+        <busStop id="6260223361" name="Tierno Galván - Palacio de Congresos"/>
+    </ptLine>
+    <ptLine id="14121337" name="Bus 0174B: Granada → La Zubia → Ogíjares" line="0174B" type="bus" vClass="bus" completeness="0.02" missingAfter="42">
+        <route edges="675971774#0 530758862 171825747#0"/>
+        <busStop id="6260223361" name="Tierno Galván - Palacio de Congresos"/>
+    </ptLine>
+    <ptLine id="14216112" name="Bus 0170A: Lomalinda → Ogíjares → Granada" line="0170A" type="bus" vClass="bus" completeness="0.04" missingBefore="23">
+        <route edges="675971774#0 530758862 171825747#0"/>
+        <busStop id="6260223361" name="Tierno Galván - Palacio de Congresos"/>
+    </ptLine>
+    <ptLine id="14216113" name="Bus 0170A: Granada → Ogíjares → Lomalinda" line="0170A" type="bus" vClass="bus" completeness="0.04" missingAfter="23">
+        <busStop id="6260223361" name="Tierno Galván - Palacio de Congresos"/>
+    </ptLine>
+    <ptLine id="14216397" name="Bus 0171: Granada → Ogíjares → Gójar → Dílar" line="0171" type="bus" vClass="bus" completeness="0.03" missingAfter="32">
+        <busStop id="6260223361" name="Tierno Galván - Palacio de Congresos"/>
+    </ptLine>
+    <ptLine id="14216398" name="Bus 0171: Dílar → Gójar → Ogíjares → Granada" line="0171" type="bus" vClass="bus" completeness="0.03" missingBefore="34">
+        <route edges="675971774#0 530758862 171825747#0"/>
+        <busStop id="6260223361" name="Tierno Galván - Palacio de Congresos"/>
+    </ptLine>
+    <ptLine id="14230858" name="Bus 0395: Quéntar → Dúdar → Cenes de la Vega → Granada" line="0395" type="bus" vClass="bus" completeness="0.06" missingBefore="29">
+        <route edges="1162743956#0 1162743957#0 166107155#0"/>
+        <busStop id="9743415512" name="Manuel de Góngora 1"/>
+        <busStop id="9803824408" name="Paseo de los Basilios"/>
+    </ptLine>
+    <ptLine id="14230859" name="Bus 0395: Granada → Cenes de la Vega→ Dúdar → Quéntar" line="0395" type="bus" vClass="bus" completeness="0.03" missingAfter="27">
+        <route edges="166107155#0"/>
+        <busStop id="9803824408" name="Paseo de los Basilios"/>
+    </ptLine>
+    <ptLine id="7381803" name="Bus 33: Estación de Autobuses → Cenes de la Vega" line="33" type="bus" vClass="bus" color="230,0,123" completeness="0.02" missingBefore="13" missingAfter="27">
+        <route edges="161424705#0 184573004#0 129301692 166107155#0"/>
+        <busStop id="2293379862" name="Paseo de los Basilios 2 - Escolapios"/>
+    </ptLine>
+    <ptLine id="7534694" name="Bus 0245: Granada → Aeropuerto" line="0245" type="bus" vClass="bus" completeness="0.09" missingAfter="9">
+        <route edges="666985090 129301668#0 184573005#0 820510903 28238524#0 378872530#0"/>
+        <busStop id="552784604" name="Palacio de Congresos - Plaza Rotary"/>
+    </ptLine>
+    <ptLine id="7633906" name="Bus 4: Chana → Zaidín" line="4" type="bus" vClass="bus" color="228,0,16" completeness="0.06" missingBefore="17" missingAfter="13">
+        <route edges="161424705#0 184573004#0 129301692 509283334#0 9712679 862094922 530758863 530758862 171825747#0"/>
+        <busStop id="6396850973" name="Acera del Darro 98 - Humilladero"/>
+        <busStop id="6646330702" name="Tierno Galván - Palacio de Congresos"/>
+    </ptLine>
+    <ptLine id="7822382" name="Bus S2: Villa Argaz → Centro" line="S2" type="bus" vClass="bus" color="137,35,33" completeness="0.06" missingBefore="12" missingAfter="5">
+        <route edges="1162743956#0 1162743957#0 184573005#0 820510903 28238524#0 378872530#0 6066208 179959896#0 184573004#0 129301692 509283334#0 9712679 862094922 530758863 530758862 171825747#0"/>
+        <busStop id="1897894627" name="Poeta Manuel de Góngora 9"/>
+    </ptLine>
+    <ptLine id="8047516" name="Bus 0177: Granada → La Zubia (Campo de Fútbol)" line="0177" type="bus" vClass="bus" completeness="0.05" missingAfter="18">
+        <busStop id="6260223361" name="Tierno Galván - Palacio de Congresos"/>
+    </ptLine>
+    <ptLine id="8554083" name="Bus 0170B: Granada → Ogíjares → Las Pedrizas → Lomalinda" line="0170B" type="bus" vClass="bus" completeness="0.04" missingAfter="24">
+        <busStop id="6260223361" name="Tierno Galván - Palacio de Congresos"/>
+    </ptLine>
+    <ptLine id="8699297" name="Bus 0390: Güéjar Sierra → Pinos Genil → Granada" line="0390" type="bus" vClass="bus" completeness="0.05" missingBefore="36">
+        <route edges="1162743956#0 1162743957#0 166107155#0"/>
+        <busStop id="9743415512" name="Manuel de Góngora 1"/>
+        <busStop id="9803824408" name="Paseo de los Basilios"/>
+    </ptLine>
+    <ptLine id="8896997" name="Bus 9: Chana → Los Rebites" line="9" type="bus" vClass="bus" color="57,171,51" completeness="0.03" missingBefore="45" missingAfter="19">
+        <route edges="161424705#0 184573004#0 129301692 509283334#0 9712679 862094922 530758863 530758862 666985090 129301668#0 166107155#0"/>
+        <busStop id="552784604" name="Palacio de Congresos - Plaza Rotary"/>
+        <busStop id="2293379862" name="Paseo de los Basilios 2 - Escolapios"/>
+    </ptLine>
+    <ptLine id="9275532" name="Bus 0245: Aeropuerto → Granada" line="0245" type="bus" vClass="bus" completeness="0.09" missingBefore="9">
+        <route edges="161424705#0 184573004#0 129301692 509283334#0 9712679 862094922 530758863 530758862 666985090"/>
+        <busStop id="552784604" name="Palacio de Congresos - Plaza Rotary"/>
+    </ptLine>
+    <ptLine id="9293080" name="Bus 0390: Granada → Pinos Genil → Güéjar Sierra" line="0390" type="bus" vClass="bus" completeness="0.03" missingAfter="35">
+        <route edges="166107155#0"/>
+        <busStop id="9803824408" name="Paseo de los Basilios"/>
+    </ptLine>
+    <ptLine id="9300035" name="Bus 0170B: Lomalinda → Las Pedrizas → Ogíjares → Granada" line="0170B" type="bus" vClass="bus" period="2100" completeness="0.03" missingBefore="27">
+        <route edges="675971774#0 530758862 171825747#0"/>
+        <busStop id="6260223361" name="Tierno Galván - Palacio de Congresos"/>
+    </ptLine>
+    <ptLine id="9312490" name="Bus 0177: La Zubia (Campo de Fútbol) → Granada" line="0177" type="bus" vClass="bus" completeness="0.10" missingBefore="18">
+        <route edges="1162743956#0 1162743957#0 509283334#0 9712679 862094922 530758863 530758862 171825747#0"/>
+        <busStop id="9743415512" name="Manuel de Góngora 1"/>
+        <busStop id="6260223361" name="Tierno Galván - Palacio de Congresos"/>
+    </ptLine>
+    <ptLine id="9337179" name="Bus 33: Cenes de la Vega → Estación de Autobuses" line="33" type="bus" vClass="bus" color="230,0,123" completeness="0.02" missingBefore="29" missingAfter="18">
+        <route edges="202438589#0 673560717 179959896#0 378872530#0"/>
+        <busStop id="5939512652" name="Plaza del Humilladero 1"/>
+    </ptLine>
+    <ptLine id="9361799" name="Bus S2: Centro → Villa Argaz" line="S2" type="bus" vClass="bus" color="137,35,33" completeness="0.07" missingAfter="13">
+        <busStop id="6646330702" name="Tierno Galván - Palacio de Congresos"/>
+    </ptLine>
+    <ptLine id="9479669" name="Bus 8: Camino de Alfacar → Palacio de Deportes" line="8" type="bus" vClass="bus" color="100,120,110" completeness="0.03" missingBefore="18" missingAfter="14">
+        <route edges="161424705#0 184573004#0 129301692 509283334#0 9712679 862094922 530758863 530758862 171825747#0"/>
+        <busStop id="6646330702" name="Tierno Galván - Palacio de Congresos"/>
+    </ptLine>
+    <ptLine id="9701517" name="Bus 13: Puerta Real → Cementerio" line="13" type="bus" vClass="bus" completeness="0.10" missingAfter="17">
+        <route edges="666985090 129301668#0 166107155#0"/>
+        <busStop id="552784604" name="Palacio de Congresos - Plaza Rotary"/>
+        <busStop id="2293379862" name="Paseo de los Basilios 2 - Escolapios"/>
+    </ptLine>
+    <ptLine id="9701518" name="Bus 13: Cementerio → Puerta Real" line="13" type="bus" vClass="bus" completeness="0.05" missingBefore="17" missingAfter="4">
+        <route edges="202438589#0 673560717 179959896#0 378872530#0 6066208 179959896#0 184573004#0 129301692 509283334#0 9712679 862094922 530758863 530758862 666985090"/>
+        <busStop id="5939512652" name="Plaza del Humilladero 1"/>
+    </ptLine>
+    <ptLine id="9854714" name="Bus 21: Estación de Autobuses → Centro → Parque de las Ciencias" line="21" type="bus" vClass="bus" completeness="0.03" missingBefore="4" missingAfter="24">
+        <route edges="675971774#0 530758862 666985090 129301668#0 184573005#0 820510903 28238524#0 378872530#0"/>
+        <busStop id="552784604" name="Palacio de Congresos - Plaza Rotary"/>
+    </ptLine>
+</ptLines>

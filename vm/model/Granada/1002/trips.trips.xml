@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-08-13 21:16:51.959617 by $Id: ptlines2flows.py v1_3_1+0313-ccb31df3eb jakob.erdmann@dlr.de 2019-09-02 13:26:32 +0200 $ v1_24_0+0000-b72eb3fabc8
+<configuration>
+    <net-file value="C:\Users\antonio.lalaguna\Downloads\NUCLIS Save-V2X\Docs Drive\03 Implementacion\Bus priority GRANADA\SUMO\1030\2025-08-13-21-13-54\osm.net.xml.gz"/>
+    <ptlines-file value="C:\Users\antonio.lalaguna\Downloads\NUCLIS Save-V2X\Docs Drive\03 Implementacion\Bus priority GRANADA\SUMO\1030\2025-08-13-21-13-54\osm_ptlines.xml"/>
+    <ptstops-file value="C:\Users\antonio.lalaguna\Downloads\NUCLIS Save-V2X\Docs Drive\03 Implementacion\Bus priority GRANADA\SUMO\1030\2025-08-13-21-13-54\osm_stops.add.xml"/>
+    <output-file value="C:\Users\antonio.lalaguna\Downloads\NUCLIS Save-V2X\Docs Drive\03 Implementacion\Bus priority GRANADA\SUMO\1030\2025-08-13-21-13-54\osm_pt.rou.xml"/>
+    <stopinfos-file value="C:\Users\antonio.lalaguna\Downloads\NUCLIS Save-V2X\Docs Drive\03 Implementacion\Bus priority GRANADA\SUMO\1030\2025-08-13-21-13-54\stopinfos.xml"/>
+    <routes-file value="C:\Users\antonio.lalaguna\Downloads\NUCLIS Save-V2X\Docs Drive\03 Implementacion\Bus priority GRANADA\SUMO\1030\2025-08-13-21-13-54\vehroutes.xml"/>
+    <trips-file value="C:\Users\antonio.lalaguna\Downloads\NUCLIS Save-V2X\Docs Drive\03 Implementacion\Bus priority GRANADA\SUMO\1030\2025-08-13-21-13-54\trips.trips.xml"/>
+    <end value="900.0"/>
+    <min-stops value="0"/>
+    <extend-to-fringe value="True"/>
+    <random-begin value="True"/>
+    <seed value="42"/>
+    <ignore-errors value="True"/>
+    <vtype-prefix value="pt_"/>
+    <verbose value="True"/>
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="pt_bus" vClass="bus" speedFactor="0.95"/>
+    <vType id="pt_tram" vClass="tram" speedFactor="1.0"/>
+    <vType id="pt_train" vClass="rail"/>
+    <vType id="pt_subway" vClass="subway"/>
+    <vType id="pt_light_rail" vClass="rail_urban"/>
+    <vType id="pt_monorail" vClass="rail_urban"/>
+    <vType id="pt_trolleybus" vClass="bus" speedFactor="0.95"/>
+    <vType id="pt_minibus" vClass="bus" speedFactor="0.95"/>
+    <vType id="pt_share_taxi" vClass="taxi" speedFactor="0.95"/>
+    <vType id="pt_aerialway" vClass="cable_car" length="2.5" width="2" personCapacity="4"/>
+    <vType id="pt_ferry" vClass="ship"/>
+    <trip id="0_bus_111:0" type="pt_bus" depart="3.0" departLane="best" from="202438589#0" to="378872530#0">
+        <stop busStop="5939512652" duration="30"/>  <!-- Plaza del Humilladero 1 -->
+    </trip>
+    <trip id="1_bus_121:0" type="pt_bus" depart="15.0" departLane="best" from="161424705#0" to="166107155#0">
+        <stop busStop="4215841922" duration="30"/>  <!-- Acera del Darro 96 -->
+        <stop busStop="552784604" duration="30"/>  <!-- Palacio de Congresos - Plaza Rotary -->
+        <stop busStop="2293379862" duration="30"/>  <!-- Paseo de los Basilios 2 - Escolapios -->
+    </trip>
+    <trip id="2_bus_0275:0" type="pt_bus" depart="15.0" departLane="best" from="171825747#0" to="171825747#0">
+        <stop busStop="6260223361" duration="30"/>  <!-- Tierno Galván - Palacio de Congresos -->
+    </trip>
+    <trip id="3_bus_0175:0" type="pt_bus" depart="17.0" departLane="best" from="171825747#0" to="171825747#0">
+        <stop busStop="6260223361" duration="30"/>  <!-- Tierno Galván - Palacio de Congresos -->
+    </trip>
+    <trip id="4_bus_0175:1" type="pt_bus" depart="52.0" departLane="best" from="1162743956#0" to="171825747#0">
+        <stop busStop="9743415512" duration="30"/>  <!-- Manuel de Góngora 1 -->
+        <stop busStop="6260223361" duration="30"/>  <!-- Tierno Galván - Palacio de Congresos -->
+    </trip>
+    <trip id="5_bus_0174A:0" type="pt_bus" depart="55.0" departLane="best" from="1162743956#0" to="171825747#0">
+        <stop busStop="6260223361" duration="30"/>  <!-- Tierno Galván - Palacio de Congresos -->
+    </trip>
+    <trip id="6_bus_0174B:0" type="pt_bus" depart="58.0" departLane="best" from="675971774#0" to="171825747#0">
+        <stop busStop="6260223361" duration="30"/>  <!-- Tierno Galván - Palacio de Congresos -->
+    </trip>
+    <trip id="7_bus_0170A:0" type="pt_bus" depart="93.0" departLane="best" from="675971774#0" to="171825747#0">
+        <stop busStop="6260223361" duration="30"/>  <!-- Tierno Galván - Palacio de Congresos -->
+    </trip>
+    <trip id="8_bus_0170A:1" type="pt_bus" depart="119.0" departLane="best" from="171825747#0" to="171825747#0">
+        <stop busStop="6260223361" duration="30"/>  <!-- Tierno Galván - Palacio de Congresos -->
+    </trip>
+    <trip id="9_bus_0171:0" type="pt_bus" depart="131.0" departLane="best" from="171825747#0" to="171825747#0">
+        <stop busStop="6260223361" duration="30"/>  <!-- Tierno Galván - Palacio de Congresos -->
+    </trip>
+    <trip id="10_bus_0171:1" type="pt_bus" depart="132.0" departLane="best" from="675971774#0" to="171825747#0">
+        <stop busStop="6260223361" duration="30"/>  <!-- Tierno Galván - Palacio de Congresos -->
+    </trip>
+    <trip id="11_bus_0395:0" type="pt_bus" depart="133.0" departLane="best" from="1162743956#0" to="166107155#0">
+        <stop busStop="9743415512" duration="30"/>  <!-- Manuel de Góngora 1 -->
+        <stop busStop="9803824408" duration="30"/>  <!-- Paseo de los Basilios -->
+    </trip>
+    <trip id="12_bus_0395:1" type="pt_bus" depart="165.0" departLane="best" from="166107155#0" to="166107155#0">
+        <stop busStop="9803824408" duration="30"/>  <!-- Paseo de los Basilios -->
+    </trip>
+    <trip id="13_bus_33:0" type="pt_bus" depart="201.0" departLane="best" from="161424705#0" to="166107155#0">
+        <stop busStop="2293379862" duration="30"/>  <!-- Paseo de los Basilios 2 - Escolapios -->
+    </trip>
+    <trip id="14_bus_0245:0" type="pt_bus" depart="204.0" departLane="best" from="666985090" to="378872530#0">
+        <stop busStop="552784604" duration="30"/>  <!-- Palacio de Congresos - Plaza Rotary -->
+    </trip>
+    <trip id="15_bus_4:0" type="pt_bus" depart="253.0" departLane="best" from="161424705#0" to="171825747#0">
+        <stop busStop="6396850973" duration="30"/>  <!-- Acera del Darro 98 - Humilladero -->
+        <stop busStop="6646330702" duration="30"/>  <!-- Tierno Galván - Palacio de Congresos -->
+    </trip>
+    <trip id="16_bus_S2:0" type="pt_bus" depart="303.0" departLane="best" from="1162743956#0" to="378872530#0">
+        <stop busStop="1897894627" duration="30"/>  <!-- Poeta Manuel de Góngora 9 -->
+    </trip>
+    <trip id="17_bus_0177:0" type="pt_bus" depart="326.0" departLane="best" from="171825747#0" to="171825747#0">
+        <stop busStop="6260223361" duration="30"/>  <!-- Tierno Galván - Palacio de Congresos -->
+    </trip>
+    <trip id="18_bus_0170B:0" type="pt_bus" depart="353.0" departLane="best" from="171825747#0" to="171825747#0">
+        <stop busStop="6260223361" duration="30"/>  <!-- Tierno Galván - Palacio de Congresos -->
+    </trip>
+    <trip id="19_bus_0390:0" type="pt_bus" depart="362.0" departLane="best" from="1162743956#0" to="166107155#0">
+        <stop busStop="9743415512" duration="30"/>  <!-- Manuel de Góngora 1 -->
+        <stop busStop="9803824408" duration="30"/>  <!-- Paseo de los Basilios -->
+    </trip>
+    <trip id="20_bus_9:0" type="pt_bus" depart="383.0" departLane="best" from="161424705#0" to="166107155#0">
+        <stop busStop="552784604" duration="30"/>  <!-- Palacio de Congresos - Plaza Rotary -->
+        <stop busStop="2293379862" duration="30"/>  <!-- Paseo de los Basilios 2 - Escolapios -->
+    </trip>
+    <trip id="21_bus_0245:1" type="pt_bus" depart="389.0" departLane="best" from="161424705#0" to="666985090">
+        <stop busStop="552784604" duration="30"/>  <!-- Palacio de Congresos - Plaza Rotary -->
+    </trip>
+    <trip id="22_bus_0390:1" type="pt_bus" depart="406.0" departLane="best" from="166107155#0" to="166107155#0">
+        <stop busStop="9803824408" duration="30"/>  <!-- Paseo de los Basilios -->
+    </trip>
+    <trip id="23_bus_0170B:1" type="pt_bus" depart="418.0" departLane="best" from="675971774#0" to="171825747#0">
+        <stop busStop="6260223361" duration="30"/>  <!-- Tierno Galván - Palacio de Congresos -->
+    </trip>
+    <trip id="24_bus_0177:1" type="pt_bus" depart="441.0" departLane="best" from="1162743956#0" to="171825747#0">
+        <stop busStop="9743415512" duration="30"/>  <!-- Manuel de Góngora 1 -->
+        <stop busStop="6260223361" duration="30"/>  <!-- Tierno Galván - Palacio de Congresos -->
+    </trip>
+    <trip id="25_bus_33:1" type="pt_bus" depart="483.0" departLane="best" from="202438589#0" to="378872530#0">
+        <stop busStop="5939512652" duration="30"/>  <!-- Plaza del Humilladero 1 -->
+    </trip>
+    <trip id="26_bus_S2:1" type="pt_bus" depart="484.0" departLane="best" from="171825747#0" to="171825747#0">
+        <stop busStop="6646330702" duration="30"/>  <!-- Tierno Galván - Palacio de Congresos -->
+    </trip>
+    <trip id="27_bus_8:0" type="pt_bus" depart="485.0" departLane="best" from="161424705#0" to="171825747#0">
+        <stop busStop="6646330702" duration="30"/>  <!-- Tierno Galván - Palacio de Congresos -->
+    </trip>
+    <trip id="28_bus_13:0" type="pt_bus" depart="508.0" departLane="best" from="666985090" to="166107155#0">
+        <stop busStop="552784604" duration="30"/>  <!-- Palacio de Congresos - Plaza Rotary -->
+        <stop busStop="2293379862" duration="30"/>  <!-- Paseo de los Basilios 2 - Escolapios -->
+    </trip>
+    <trip id="29_bus_13:1" type="pt_bus" depart="535.0" departLane="best" from="202438589#0" to="378872530#0">
+        <stop busStop="5939512652" duration="30"/>  <!-- Plaza del Humilladero 1 -->
+    </trip>
+    <trip id="30_bus_21:0" type="pt_bus" depart="574.0" departLane="best" from="675971774#0" to="378872530#0">
+        <stop busStop="552784604" duration="30"/>  <!-- Palacio de Congresos - Plaza Rotary -->
+    </trip>
+</routes>

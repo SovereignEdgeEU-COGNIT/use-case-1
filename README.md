@@ -8,7 +8,7 @@ Shows the function we are using to call the Cognit framework from a device at th
 In this project we have been also doing performance tests, and for this reason we included a class to run performance tests, `class UC1_Test` in the `uc1_workload_gr_test_minimal_offload_sync_Locust.py` file.
 
 Our function expects certain environment vars defined:
-* `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`: Credentials to access the DaaS. Required.
+* `ACCESS_KEY_ID`, `SECRET_ACCESS_KEY`: Credentials to access the DaaS. Required.
 * `CITY`: City name. Used to compose the path where the SUMO model is stored. Required.
 * `JUNCTION`: String with the junction code to simulate. Used to compose the path where the SUMO model is stored. Required
 * `FORCE_CONGESTION`: Usually the congestion is a value stored in the DaaS by one process running in Saturno. This envvar is available to force a situation of congestion. Valida values are LOW, MEDIUM, HIGH. Not required
