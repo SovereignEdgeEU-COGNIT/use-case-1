@@ -3,3 +3,5 @@ SmartCity_FaaS/old
 std_error.log
 std_output.log
 tripinfos.xml
+SmartCity_FaaS/cognit-ice.yml
+SmartCity_FaaS/cognit.properties
